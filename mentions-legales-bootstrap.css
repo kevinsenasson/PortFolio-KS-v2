@@ -388,6 +388,195 @@ a:hover {
 }
 
 /* ===================================
+   PLAN DE SITE DÉROULANT (FOOTER)
+   =================================== */
+
+/* Conteneur du plan de site */
+.plan-site-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Bouton toggle du plan de site */
+.plan-site-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.plan-site-toggle:hover {
+  color: var(--couleur-accent) !important;
+  text-decoration: none !important;
+}
+
+.plan-site-toggle:hover .plan-site-arrow {
+  color: var(--couleur-accent);
+}
+
+/* Flèche du plan de site */
+.plan-site-arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.plan-site-toggle.active .plan-site-arrow {
+  transform: rotate(180deg);
+}
+
+/* Menu déroulant */
+.plan-site-dropdown {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  min-width: 350px;
+  max-width: 400px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border: 2px solid var(--couleur-accent);
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  backdrop-filter: blur(10px);
+  margin-bottom: 0.5rem;
+}
+
+.plan-site-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Contenu du menu */
+.plan-site-content {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Section du plan de site */
+.plan-site-section {
+  margin-bottom: 0;
+}
+
+.plan-site-title {
+  color: var(--couleur-accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(245, 245, 220, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Liste des liens */
+.plan-site-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-site-links li {
+  margin-bottom: 0.4rem;
+}
+
+.plan-site-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-site-links a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(245, 245, 220, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.plan-site-links a:hover::before {
+  left: 100%;
+}
+
+.plan-site-links a:hover {
+  color: white;
+  background: rgba(245, 245, 220, 0.1);
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+.plan-site-links a i {
+  color: var(--couleur-accent);
+  width: 16px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+  .plan-site-dropdown {
+    min-width: 300px;
+    max-width: 90vw;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  .plan-site-dropdown.show {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .plan-site-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .plan-site-title {
+    font-size: 0.8rem;
+  }
+
+  .plan-site-links a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan-site-dropdown {
+    min-width: 280px;
+    max-width: 95vw;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  .plan-site-dropdown.show {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* ===================================
    MEDIA QUERIES RESPONSIVE
    =================================== */
 
