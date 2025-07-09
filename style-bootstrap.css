@@ -903,6 +903,28 @@ h6 {
   color: var(--texte-sombre);
 }
 
+/* Sujet de la veille */
+.sujet-veille {
+  background: var(--arriere-plan-gradient);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 2px solid var(--couleur-accent);
+  box-shadow: var(--ombre-moyenne);
+  transition: var(--transition-rapide);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sujet-veille:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--ombre-forte);
+}
+
+.sujet-veille i {
+  color: var(--couleur-secondaire);
+}
+
 /* Cartes de veille */
 .carte-veille {
   background: var(--arriere-plan-sombre);
