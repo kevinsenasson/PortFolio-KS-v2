@@ -1,0 +1,561 @@
+/* ===================================
+   MENTIONS LÉGALES KEVIN SENASSON - CSS BOOTSTRAP
+   Version responsive avec Bootstrap 5.3
+   Harmonisé avec le portfolio principal
+   =================================== */
+
+/* ===================================
+   VARIABLES CSS PERSONNALISÉES
+   =================================== */
+:root {
+  /* Couleurs principales (identiques au portfolio) */
+  --couleur-principale: #323232; /* Gris foncé principal */
+  --couleur-secondaire: #f5f5dc; /* Beige clair */
+  --couleur-accent: #2c5aa0; /* Bleu professionnel */
+  --couleur-succes: #28a745; /* Vert succès */
+  --couleur-danger: #dc3545; /* Rouge danger */
+  --couleur-warning: #ffc107; /* Orange warning */
+  --couleur-info: #17a2b8; /* Bleu info */
+
+  /* Couleurs spécifiques mentions légales */
+  --couleur-liens-mentions: #d5e404; /* Vert-jaune pour liens (original) */
+
+  /* Arrière-plans */
+  --arriere-plan-sombre: #222222; /* Fond sombre pour cartes */
+  --arriere-plan-clair: rgba(255, 255, 255, 0.95); /* Fond clair transparent */
+  --arriere-plan-gradient: linear-gradient(
+    135deg,
+    var(--couleur-principale) 0%,
+    var(--couleur-accent) 100%
+  );
+
+  /* Textes */
+  --texte-clair: #f5f5dc; /* Texte clair */
+  --texte-sombre: #323232; /* Texte sombre */
+  --texte-gris: #6c757d; /* Texte gris Bootstrap */
+
+  /* Ombres */
+  --ombre-legere: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --ombre-moyenne: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --ombre-forte: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-rapide: all 0.3s ease;
+  --transition-lente: all 0.6s ease;
+
+  /* Bordures */
+  --bordure-radius: 15px;
+  --bordure-radius-small: 8px;
+}
+
+/* ===================================
+   STYLES GÉNÉRAUX
+   =================================== */
+
+/* Configuration de base du body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--couleur-principale);
+  color: var(--texte-clair);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Personnalisation de la scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--couleur-principale);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--couleur-accent);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--couleur-secondaire);
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+/* Barre de navigation (identique au portfolio) */
+.barre-navigation {
+  background: rgba(34, 34, 34, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--ombre-moyenne);
+  transition: var(--transition-rapide);
+  z-index: 1050;
+}
+
+/* Logo/Nom dans la navbar */
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--couleur-secondaire) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-rapide);
+}
+
+.navbar-brand:hover {
+  color: var(--couleur-accent) !important;
+  transform: scale(1.05);
+}
+
+/* Liens de navigation */
+.nav-link {
+  color: var(--couleur-secondaire) !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  border-radius: var(--bordure-radius-small);
+  transition: var(--transition-rapide);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--couleur-accent) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   CONTENU PRINCIPAL
+   =================================== */
+
+/* Espacement du contenu principal */
+.contenu-principal {
+  min-height: 100vh;
+  padding-top: 100px; /* Compense la navbar fixe */
+  padding-bottom: 50px;
+}
+
+/* ===================================
+   CARTES ET SECTIONS
+   =================================== */
+
+/* Carte principale des mentions légales */
+.carte-mentions-principales {
+  background: var(--arriere-plan-sombre);
+  border: 2px solid var(--couleur-accent);
+  color: var(--couleur-secondaire);
+}
+
+/* Titre principal */
+.titre-principal-mentions {
+  color: var(--couleur-secondaire);
+  font-size: 3rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 2rem;
+}
+
+/* Ligne décorative sous le titre */
+.ligne-decorative {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--couleur-accent),
+    var(--couleur-liens-mentions)
+  );
+  border-radius: 2px;
+}
+
+/* Introduction */
+.introduction-mentions {
+  font-size: 1.3rem;
+  color: var(--couleur-accent);
+  font-weight: 600;
+}
+
+/* Sections de contenu */
+.carte-section {
+  background: var(--arriere-plan-sombre);
+  border-left: 5px solid var(--couleur-accent);
+  color: var(--couleur-secondaire);
+  transition: var(--transition-rapide);
+}
+
+.carte-section:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ombre-forte);
+  border-left-color: var(--couleur-liens-mentions);
+}
+
+/* Titres de section */
+.titre-section {
+  color: var(--couleur-accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Sous-titres */
+.sous-titre-mentions {
+  color: var(--couleur-liens-mentions);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Texte principal */
+.texte-mentions {
+  color: var(--couleur-secondaire);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ===================================
+   LIENS ET INTERACTIONS
+   =================================== */
+
+/* Liens généraux */
+a {
+  color: var(--couleur-liens-mentions);
+  text-decoration: none;
+  transition: var(--transition-rapide);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--couleur-accent);
+  text-decoration: underline;
+}
+
+/* Lien vers le site */
+.lien-site {
+  background: rgba(213, 228, 4, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--bordure-radius-small);
+  border: 1px solid var(--couleur-liens-mentions);
+}
+
+.lien-site:hover {
+  background: rgba(213, 228, 4, 0.2);
+  transform: scale(1.02);
+}
+
+/* Liens de contact */
+.lien-contact {
+  color: var(--couleur-liens-mentions);
+  font-weight: 600;
+}
+
+.lien-contact:hover {
+  color: var(--couleur-accent);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ===================================
+   CARTES SPÉCIFIQUES
+   =================================== */
+
+/* Carte hébergeur */
+.carte-hebergeur {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--couleur-accent);
+  color: var(--couleur-secondaire);
+}
+
+/* Carte droits utilisateur */
+.carte-droits {
+  background: rgba(44, 90, 160, 0.1);
+  border: 2px solid var(--couleur-accent);
+}
+
+/* Items de droits */
+.droit-item {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--couleur-liens-mentions);
+  color: var(--couleur-secondaire);
+  transition: var(--transition-rapide);
+  text-align: center;
+}
+
+.droit-item:hover {
+  background: rgba(213, 228, 4, 0.1);
+  transform: translateY(-2px);
+  box-shadow: var(--ombre-legere);
+}
+
+/* Carte exercer droits */
+.carte-exercer-droits {
+  background: rgba(40, 167, 69, 0.1);
+  border: 2px solid var(--couleur-succes);
+}
+
+/* ===================================
+   ALERTES ET NOTIFICATIONS
+   =================================== */
+
+/* Alerte info */
+.alerte-info {
+  background: rgba(23, 162, 184, 0.15);
+  border: 2px solid var(--couleur-info);
+  color: var(--couleur-secondaire);
+  border-radius: var(--bordure-radius-small);
+}
+
+/* Alerte warning */
+.alerte-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border: 2px solid var(--couleur-warning);
+  color: var(--couleur-secondaire);
+  border-radius: var(--bordure-radius-small);
+}
+
+/* Alerte danger */
+.alerte-danger {
+  background: rgba(220, 53, 69, 0.15);
+  border: 2px solid var(--couleur-danger);
+  color: var(--couleur-secondaire);
+  border-radius: var(--bordure-radius-small);
+}
+
+/* ===================================
+   LISTES
+   =================================== */
+
+/* Liste de contact */
+.liste-contact {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-item {
+  color: var(--couleur-secondaire);
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(213, 228, 4, 0.2);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+/* ===================================
+   PROPRIÉTAIRE
+   =================================== */
+
+.proprietaire {
+  color: var(--couleur-liens-mentions);
+  background: rgba(213, 228, 4, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--bordure-radius-small);
+  font-weight: 700;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.pied-de-page {
+  background: var(--arriere-plan-sombre) !important;
+  color: var(--couleur-secondaire);
+  border-top: 3px solid var(--couleur-accent);
+}
+
+.pied-de-page h5 {
+  color: var(--couleur-accent);
+  font-weight: 700;
+}
+
+.pied-de-page a {
+  color: var(--couleur-secondaire);
+  transition: var(--transition-rapide);
+}
+
+.pied-de-page a:hover {
+  color: var(--couleur-liens-mentions);
+  transform: translateX(5px);
+}
+
+/* Liens réseaux footer */
+.liens-reseaux-footer a {
+  display: inline-block;
+  transition: var(--transition-rapide);
+}
+
+.liens-reseaux-footer a:hover {
+  color: var(--couleur-accent) !important;
+  transform: translateY(-3px) scale(1.2);
+}
+
+/* ===================================
+   MEDIA QUERIES RESPONSIVE
+   =================================== */
+
+/* Tablettes (768px et plus) */
+@media (min-width: 768px) {
+  .titre-principal-mentions {
+    font-size: 4rem;
+  }
+
+  .introduction-mentions {
+    font-size: 1.4rem;
+  }
+
+  .titre-section {
+    font-size: 2rem;
+  }
+
+  .texte-mentions {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop (992px et plus) */
+@media (min-width: 992px) {
+  .contenu-principal {
+    padding-top: 120px;
+  }
+
+  .titre-principal-mentions {
+    font-size: 4.5rem;
+  }
+
+  .carte-mentions-principales {
+    padding: 4rem !important;
+  }
+
+  .carte-section {
+    padding: 2rem !important;
+  }
+}
+
+/* Grand écran (1200px et plus) */
+@media (min-width: 1200px) {
+  .titre-principal-mentions {
+    font-size: 5rem;
+  }
+
+  .ligne-decorative {
+    width: 150px;
+    height: 5px;
+  }
+}
+
+/* Mobile très petit (480px et moins) */
+@media (max-width: 480px) {
+  .contenu-principal {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .titre-principal-mentions {
+    font-size: 2.5rem;
+  }
+
+  .introduction-mentions {
+    font-size: 1.1rem;
+  }
+
+  .titre-section {
+    font-size: 1.5rem;
+  }
+
+  .texte-mentions {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .carte-mentions-principales {
+    padding: 2rem !important;
+  }
+
+  .carte-section {
+    padding: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .droit-item {
+    margin-bottom: 0.5rem;
+    padding: 1rem !important;
+  }
+
+  .ligne-decorative {
+    width: 60px;
+    height: 3px;
+  }
+}
+
+/* ===================================
+   ANIMATIONS PERSONNALISÉES
+   =================================== */
+
+/* Animation de pulse pour les éléments importants */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 5px var(--couleur-accent);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--couleur-accent), 0 0 30px rgba(44, 90, 160, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--couleur-accent);
+  }
+}
+
+/* Appliquer l'animation aux éléments au survol */
+.carte-section:hover,
+.carte-mentions-principales:hover {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Animation de fade-in pour le contenu */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation d'apparition progressive */
+.carte-section,
+.carte-mentions-principales {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===================================
+   IMPRESSION
+   =================================== */
+
+@media print {
+  .barre-navigation,
+  .pied-de-page {
+    display: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .contenu-principal {
+    padding-top: 0;
+  }
+
+  .carte-section,
+  .carte-mentions-principales {
+    border: 1px solid #000 !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+}

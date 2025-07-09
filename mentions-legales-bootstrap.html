@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions Légales - Kevin Senasson</title>
+
+    <!-- Bootstrap CSS (Version 5.3) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/maquettage.jpg" type="image/x-icon" />
+
+    <!-- CSS personnalisé pour les mentions légales -->
+    <link rel="stylesheet" href="mentions-legales-bootstrap.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark barre-navigation fixed-top">
+      <div class="container">
+        <!-- Logo/Nom avec lien vers le portfolio -->
+        <a class="navbar-brand fw-bold" href="index-bootstrap.html">
+          <i class="fas fa-arrow-left me-2"></i>
+          Retour au Portfolio
+        </a>
+
+        <!-- Bouton hamburger pour mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navigation rapide -->
+        <div class="collapse navbar-collapse" id="menuNavigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#edition">
+                <i class="fas fa-edit me-1"></i>Édition
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hebergeur">
+                <i class="fas fa-server me-1"></i>Hébergeur
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donnees">
+                <i class="fas fa-shield-alt me-1"></i>Données
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-mentions">
+                <i class="fas fa-envelope me-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="contenu-principal">
+      <div class="container">
+        <!-- En-tête de la page -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Carte principale des mentions légales -->
+            <div
+              class="carte-mentions-principales p-5 rounded-4 shadow-lg mb-5"
+              data-aos="fade-down"
+            >
+              <div class="text-center mb-5">
+                <h1 class="titre-principal-mentions">
+                  <i class="fas fa-balance-scale me-3"></i>
+                  Mentions Légales
+                </h1>
+                <div class="ligne-decorative mx-auto mb-4"></div>
+                <p class="lead introduction-mentions">
+                  <i class="fas fa-calendar-alt me-2"></i>
+                  En vigueur au 12 octobre 2024
+                </p>
+              </div>
+
+              <!-- Introduction -->
+              <div class="section-introduction mb-5">
+                <p class="texte-mentions">
+                  Conformément aux dispositions de la loi n°2004-575 du 21 juin
+                  2004 pour la Confiance en l'économie numérique, il est porté à
+                  la connaissance des utilisateurs et visiteurs, ci-après
+                  l'"Utilisateur", du site
+                  <a
+                    href="https://portfolio-kevin-senasson.alwaysdata.net"
+                    class="lien-site"
+                    target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt me-1"></i>
+                    https://portfolio-kevin-senasson.alwaysdata.net
+                  </a>
+                  ci-après le "Site", les présentes mentions légales.
+                </p>
+                <div class="alerte-info p-3 rounded-3 mt-3">
+                  <i class="fas fa-info-circle me-2"></i>
+                  <strong>Important :</strong> La connexion et la navigation sur
+                  le Site par l'Utilisateur implique acceptation intégrale et
+                  sans réserve des présentes mentions légales. Ces dernières
+                  sont accessibles sur le Site à la rubrique "Mentions légales".
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sections détaillées -->
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Section Édition du site -->
+            <section
+              id="edition"
+              class="carte-section mb-4 p-4 rounded-4 shadow"
+              data-aos="fade-right"
+            >
+              <div class="en-tete-section mb-3">
+                <h2 class="titre-section">
+                  <i class="fas fa-user-edit me-2"></i>
+                  Édition du site
+                </h2>
+              </div>
+              <div class="contenu-section">
+                <p class="texte-mentions">
+                  L'édition et la direction de la publication du Site est
+                  assurée par
+                  <strong class="proprietaire">Monsieur Kevin Senasson</strong>.
+                </p>
+              </div>
+            </section>
+
+            <!-- Section Hébergeur -->
+            <section
+              id="hebergeur"
+              class="carte-section mb-4 p-4 rounded-4 shadow"
+              data-aos="fade-left"
+            >
+              <div class="en-tete-section mb-3">
+                <h2 class="titre-section">
+                  <i class="fas fa-server me-2"></i>
+                  Hébergeur
+                </h2>
+              </div>
+              <div class="contenu-section">
+                <div class="carte-hebergeur p-3 rounded-3">
+                  <p class="texte-mentions mb-2">
+                    <i class="fas fa-building me-2"></i>
+                    <strong>Société :</strong> Alwaysdata
+                  </p>
+                  <p class="texte-mentions mb-0">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <strong>Adresse :</strong> 91 rue du Faubourg Saint Honoré -
+                    75008 Paris
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section Accès au site -->
+            <section
+              id="acces"
+              class="carte-section mb-4 p-4 rounded-4 shadow"
+              data-aos="fade-right"
+            >
+              <div class="en-tete-section mb-3">
+                <h2 class="titre-section">
+                  <i class="fas fa-globe me-2"></i>
+                  Accès au site
+                </h2>
+              </div>
+              <div class="contenu-section">
+                <p class="texte-mentions">
+                  Le Site est normalement accessible, à tout moment, à
+                  l'Utilisateur. Toutefois, l'Editeur pourra, à tout moment,
+                  suspendre, limiter ou interrompre le Site afin de procéder,
+                  notamment, à des mises à jour ou des modifications de son
+                  contenu.
+                </p>
+                <div class="alerte-warning p-3 rounded-3 mt-3">
+                  <i class="fas fa-exclamation-triangle me-2"></i>
+                  <strong>Avertissement :</strong> L'Editeur ne pourra en aucun
+                  cas être tenu responsable des conséquences éventuelles de
+                  cette indisponibilité sur les activités de l'Utilisateur.
+                </div>
+              </div>
+            </section>
+
+            <!-- Section Collecte des données -->
+            <section
+              id="donnees"
+              class="carte-section mb-4 p-4 rounded-4 shadow"
+              data-aos="fade-left"
+            >
+              <div class="en-tete-section mb-3">
+                <h2 class="titre-section">
+                  <i class="fas fa-shield-alt me-2"></i>
+                  Collecte des données
+                </h2>
+              </div>
+              <div class="contenu-section">
+                <p class="texte-mentions mb-4">
+                  Le Site assure à l'Utilisateur une collecte et un traitement
+                  des données personnelles dans le respect de la vie privée
+                  conformément à la loi n°78-17 du 6 janvier 1978 relative à
+                  l'informatique, aux fichiers aux libertés et dans le respect
+                  de la règlementation applicable en matière de traitement des
+                  données à caractère personnel conformément au règlement (UE)
+                  2016/679 du Parlement européen et du Conseil du 27 avril 2016.
+                </p>
+
+                <!-- Droits de l'utilisateur -->
+                <div class="carte-droits p-4 rounded-3 mb-4">
+                  <h3 class="sous-titre-mentions mb-3">
+                    <i class="fas fa-user-shield me-2"></i>
+                    Vos droits
+                  </h3>
+                  <p class="texte-mentions mb-3">
+                    En vertu de la Règlementation applicable en matière de
+                    protection des Données à caractère personnel, l'Utilisateur
+                    dispose des droits suivants :
+                  </p>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="droit-item p-3 rounded">
+                        <i class="fas fa-eye me-2"></i>
+                        <strong>Droit d'accès</strong>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="droit-item p-3 rounded">
+                        <i class="fas fa-edit me-2"></i>
+                        <strong>Droit de rectification</strong>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="droit-item p-3 rounded">
+                        <i class="fas fa-trash me-2"></i>
+                        <strong>Droit de suppression</strong>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="droit-item p-3 rounded">
+                        <i class="fas fa-ban me-2"></i>
+                        <strong>Droit d'opposition</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Exercer ses droits -->
+                <div
+                  id="contact-mentions"
+                  class="carte-exercer-droits p-4 rounded-3"
+                >
+                  <h3 class="sous-titre-mentions mb-3">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    Comment exercer vos droits ?
+                  </h3>
+                  <p class="texte-mentions mb-3">
+                    L'Utilisateur peut exercer ses droits :
+                  </p>
+                  <ul class="liste-contact mb-0">
+                    <li class="contact-item mb-3">
+                      <i class="fas fa-envelope me-2"></i>
+                      Par email :
+                      <a
+                        href="mailto:kevin.senasson456@outlook.fr"
+                        class="lien-contact"
+                      >
+                        kevin.senasson456@outlook.fr
+                      </a>
+                    </li>
+                    <li class="contact-item mb-0">
+                      <i class="fas fa-edit me-2"></i>
+                      Depuis le
+                      <a
+                        href="index-bootstrap.html#contact"
+                        class="lien-contact"
+                      >
+                        formulaire de contact du portfolio
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section Propriété intellectuelle -->
+            <section
+              id="propriete"
+              class="carte-section mb-5 p-4 rounded-4 shadow"
+              data-aos="fade-up"
+            >
+              <div class="en-tete-section mb-3">
+                <h2 class="titre-section">
+                  <i class="fas fa-copyright me-2"></i>
+                  Propriété intellectuelle
+                </h2>
+              </div>
+              <div class="contenu-section">
+                <div class="alerte-danger p-4 rounded-3">
+                  <i class="fas fa-exclamation-circle me-2"></i>
+                  <strong>Important :</strong> Toute utilisation, reproduction,
+                  diffusion, commercialisation, modification de toutes ou partie
+                  du Site, sans autorisation expresse de l'Editeur est
+                  interdite.
+                </div>
+                <p class="texte-mentions mt-3 mb-0">
+                  <em>
+                    <i class="fas fa-info-circle me-2"></i>
+                    Ces mentions légales sont générées grâce à LegalPlace.
+                  </em>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pied-de-page bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- Informations principales -->
+          <div class="col-lg-4 col-md-6 text-center text-md-start">
+            <h5 class="mb-3"><i class="fas fa-user me-2"></i>Kevin Senasson</h5>
+            <p class="mb-2">Développeur Junior</p>
+            <p class="mb-0">© 2024 Kevin Senasson. Tous droits réservés.</p>
+          </div>
+
+          <!-- Liens rapides -->
+          <div class="col-lg-4 col-md-6 text-center">
+            <h5 class="mb-3"><i class="fas fa-link me-2"></i>Navigation</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="index-bootstrap.html"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-home me-1"></i>Retour au Portfolio
+                </a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-light text-decoration-none">
+                  <i class="fas fa-sitemap me-1"></i>Plan du site
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-lg-4 col-md-12 text-center text-lg-start">
+            <h5 class="mb-3">
+              <i class="fas fa-address-book me-2"></i>Contact
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="mailto:kevin.senasson456@outlook.fr"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-envelope me-1"></i>Email
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="tel:+33682144351"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-phone me-1"></i>Téléphone
+                </a>
+              </li>
+            </ul>
+
+            <!-- Réseaux sociaux -->
+            <div
+              class="liens-reseaux-footer d-flex justify-content-center justify-content-lg-start gap-3 mt-3"
+            >
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                class="text-light"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in fa-lg"></i>
+              </a>
+              <a
+                href="https://github.com/tamdaz/cruml"
+                target="_blank"
+                class="text-light"
+                title="GitHub"
+              >
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a
+                href="img/cv kevin senasson.pdf"
+                target="_blank"
+                class="text-light"
+                title="CV"
+              >
+                <i class="fas fa-file fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) pour les animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Script pour les animations -->
+    <script>
+      // Initialisation des animations AOS
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          easing: "ease-out",
+          once: true,
+          offset: 50,
+        });
+
+        // Navigation fluide pour les ancres
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

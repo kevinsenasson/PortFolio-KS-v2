@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets - Kevin Senasson</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="projets-bootstrap.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index-bootstrap.html">
+          <i class="fas fa-code me-2"></i>Kevin Senasson
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index-bootstrap.html#accueil">
+                <i class="fas fa-home me-1"></i>Accueil
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="projets-bootstrap.html">
+                <i class="fas fa-folder-open me-1"></i>Projets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index-bootstrap.html#contact">
+                <i class="fas fa-envelope me-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- En-tête de la page -->
+    <header class="projets-hero py-5">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="hero-title mb-4" data-aos="fade-up">
+              <i class="fas fa-rocket me-3"></i>Mes Projets
+            </h1>
+            <p
+              class="hero-subtitle mb-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Découvrez mes réalisations dans différents domaines :
+              développement web, bases de données, analyse et maquettage. Chaque
+              projet reflète ma passion pour l'innovation et la qualité.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contenu principal -->
+    <main class="container py-5">
+      <!-- Section Frontend -->
+      <section class="projet-section mb-5" data-aos="fade-up">
+        <div class="section-header mb-4">
+          <h2 class="section-title">
+            <i class="fab fa-html5 me-3"></i>FRONTEND
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Projet Portfolio -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-07-09 175914.png"
+                  class="card-img-top"
+                  alt="Portfolio Kevin Senasson"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-user-tie me-2"></i>Portfolio
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Conception d'un portfolio en HTML/CSS/JavaScript et
+                  utilisation de la bibliothèque SWIPER pour le carrousel
+                  projets
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-primary me-1">HTML</span>
+                  <span class="badge bg-info me-1">CSS</span>
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/kevinsenasson/portfolioKS"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-github me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Autre projet Frontend -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-06-07 221514.png"
+                  class="card-img-top"
+                  alt="Autre projet Frontend"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-film me-2"></i>CineZone
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Application web de cinéma avec recherche et filtrage de films,
+                  utilisant l'API The Movie Database
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-danger me-1">API TMDB</span>
+                  <span class="badge bg-warning me-1">HTML</span>
+                  <span class="badge bg-info me-1">CSS</span>
+                  <span class="badge bg-success">JavaScript</span>
+                </div>
+                <a
+                  href="https://github.com/kevinsenasson/cinezone"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-github me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Backend -->
+      <section class="projet-section mb-5" data-aos="fade-up">
+        <div class="section-header mb-4">
+          <h2 class="section-title">
+            <i class="fas fa-server me-3"></i>BACKEND
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-07-09 180516.png"
+                  class="card-img-top"
+                  alt="Projet Backend"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-cogs me-2"></i>Backend Chat
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Développement d'un chat pour communiquer surt un serveur
+                  privée
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-success me-1">Java</span>
+                  <span class="badge bg-primary me-1">Spring</span>
+                  <span class="badge bg-info me-1">Python</span>
+                </div>
+                <a
+                  href="https://github.com/kevinsenasson/classcord-client"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-github me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Base de données -->
+      <section class="projet-section mb-5" data-aos="fade-up">
+        <div class="section-header mb-4">
+          <h2 class="section-title">
+            <i class="fas fa-database me-3"></i>BASE DE DONNÉES
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <div
+                  class="card-placeholder d-flex align-items-center justify-content-center"
+                >
+                  <i class="fas fa-clock fa-4x text-muted"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title">
+                  <i class="fas fa-hourglass-half me-2"></i>A Venir
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Projets de base de données en cours de développement
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-secondary">Bientôt disponible</span>
+                </div>
+                <button class="btn btn-projet" disabled>
+                  <i class="fas fa-clock me-2"></i>En préparation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Analyse -->
+      <section class="projet-section mb-5" data-aos="fade-up">
+        <div class="section-header mb-4">
+          <h2 class="section-title">
+            <i class="fas fa-chart-line me-3"></i>ANALYSE
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <div
+                  class="card-placeholder d-flex align-items-center justify-content-center"
+                >
+                  <i class="fas fa-clock fa-4x text-muted"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column text-center">
+                <h5 class="card-title">
+                  <i class="fas fa-hourglass-half me-2"></i>A Venir
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Projets d'analyse de données en cours de développement
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-secondary">Bientôt disponible</span>
+                </div>
+                <button class="btn btn-projet" disabled>
+                  <i class="fas fa-clock me-2"></i>En préparation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Maquettage -->
+      <section class="projet-section mb-5" data-aos="fade-up">
+        <div class="section-header mb-4">
+          <h2 class="section-title">
+            <i class="fas fa-pencil-ruler me-3"></i>MAQUETTAGE
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Figma Portfolio -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-06-07 212217.png"
+                  class="card-img-top"
+                  alt="Maquette Portfolio Figma"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fab fa-figma me-2"></i>Figma Portfolio
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Conception d'un portfolio fictif sur Figma, avec des
+                  fonctionnalités interactives et un design moderne
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-purple">Figma</span>
+                </div>
+                <a
+                  href="https://www.figma.com/design/HItRfree7UmA0I6SPA9UQa/Untitled?node-id=0-1&t=zFm1QtRZxi4kTQBQ-1"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-figma me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma Yummy -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-06-07 210426.png"
+                  class="card-img-top"
+                  alt="Maquette Yummy Figma"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-utensils me-2"></i>Figma Yummy
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Site vitrine fictif pour un restaurant de nouilles, avec un
+                  design attrayant et une navigation intuitive pour localiser
+                  les restaurants
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-purple">Figma</span>
+                </div>
+                <a
+                  href="https://www.figma.com/design/IDg2HQLxIDOjaqn3qNkMjS/Maquette-Yummy-Nouilles---Int%C3%A9gration?node-id=0-1&t=SJuji5gUJuauWs7w-1"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-figma me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma CineZone -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-06-07 210849.png"
+                  class="card-img-top"
+                  alt="Maquette CineZone Figma"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-film me-2"></i>Figma CineZone
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Manipulation d'une API (The Movie Database) pour créer un site
+                  fictif de cinéma, avec des fonctionnalités de recherche et de
+                  filtrage
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-purple">Figma</span>
+                </div>
+                <a
+                  href="https://www.figma.com/design/I8MdX06USR02DGIpBQEHX6/Untitled?node-id=0-1&t=zHmGhzhD5CEsUide-1"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-figma me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Figma Horizon Location -->
+          <div
+            class="col-lg-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="card projet-card h-100">
+              <div class="card-img-container">
+                <img
+                  src="img/Capture d'écran 2025-06-07 211010.png"
+                  class="card-img-top"
+                  alt="Maquette Horizon Location Figma"
+                />
+                <div class="card-overlay">
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  <i class="fas fa-home me-2"></i>Figma Horizon Location
+                </h5>
+                <p class="card-text flex-grow-1">
+                  Conception d'une application de location d'appartements et de
+                  maisons, avec une interface utilisateur intuitive
+                </p>
+                <div class="projet-tags mb-3">
+                  <span class="badge bg-purple">Figma</span>
+                </div>
+                <a
+                  href="https://www.figma.com/design/nV5Sjg2VMozXLR2mDGHqVI/Untitled?t=9IzsqEL0zrOHq2Ox-1"
+                  target="_blank"
+                  class="btn btn-projet"
+                >
+                  <i class="fab fa-figma me-2"></i>Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section de retour -->
+    <section class="retour-section py-5 text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="retour-content" data-aos="fade-up">
+              <h3 class="mb-4">
+                <i class="fas fa-arrow-left me-2"></i>Retour au Portfolio
+              </h3>
+              <p class="mb-4">
+                Découvrez d'autres aspects de mon profil et n'hésitez pas à me
+                contacter pour discuter de vos projets !
+              </p>
+              <a href="index-bootstrap.html" class="btn btn-retour btn-lg">
+                <i class="fas fa-home me-2"></i>Retour au portfolio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">© 2025 Kevin Senasson. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#" class="social-link me-3">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link me-3">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mentions-legales-bootstrap.html" class="footer-link">
+                Mentions légales
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Library pour les animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Script personnalisé -->
+    <script>
+      // Initialisation des animations AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      // Effet de parallaxe léger sur le scroll
+      window.addEventListener("scroll", () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector(".projets-hero");
+        if (hero) {
+          hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+      });
+
+      // Animation des cartes au survol
+      document.querySelectorAll(".projet-card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-10px) scale(1.02)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+    </script>
+
+    <!-- Bouton Retour en haut -->
+    <button
+      id="boutonRetourHaut"
+      class="btn-retour-haut"
+      title="Retour en haut"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Script personnalisé pour les projets -->
+    <script src="projets-bootstrap.js"></script>
+  </body>
+</html>

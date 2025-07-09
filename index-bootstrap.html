@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Kevin Senasson - Développeur Junior</title>
+
+    <!-- Bootstrap CSS (Version 5.3) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Swiper CSS pour le carrousel des projets -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.css"
+    />
+
+    <!-- ScrollReveal pour les animations -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/OIP.webp" type="image/png" />
+
+    <!-- CSS personnalisé Bootstrap -->
+    <link rel="stylesheet" href="style-bootstrap.css" />
+  </head>
+  <body>
+    <!-- Navigation fixe en haut -->
+    <nav class="navbar navbar-expand-lg navbar-dark barre-navigation fixed-top">
+      <div class="container">
+        <!-- Logo/Nom -->
+        <a class="navbar-brand fw-bold" href="#accueil"> Kevin Senasson </a>
+
+        <!-- Bouton hamburger pour mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navigation -->
+        <div class="collapse navbar-collapse" id="menuNavigation">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil">
+                <i class="fas fa-home me-1"></i>Accueil
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formation">
+                <i class="fas fa-book me-1"></i>Formation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">
+                <i class="fas fa-puzzle-piece me-1"></i>Projets
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#veille">
+                <i class="fas fa-earth-americas me-1"></i>Veille
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#synthese">
+                <i class="fas fa-square-check me-1"></i>Synthèse
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                <i class="fas fa-envelope me-1"></i>Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="section-accueil">
+      <!-- Image de fond parallax -->
+      <div class="arriere-plan-parallax"></div>
+
+      <div class="container-fluid h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12">
+            <!-- En-tête de présentation -->
+            <div class="text-center mb-5 presentation-principale">
+              <h1
+                class="display-6 display-md-5 display-lg-4 fw-bold titre-principal mb-3"
+                data-aos="fade-down"
+              >
+                Kevin Senasson
+              </h1>
+              <p
+                class="lead fs-4 sous-titre"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                Développeur Junior
+              </p>
+            </div>
+
+            <!-- Section À propos -->
+            <div class="row justify-content-center align-items-center mb-5">
+              <!-- Image avatar -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="text-center">
+                  <img
+                    src="img/avatar.jpg"
+                    alt="Avatar de Kevin Senasson"
+                    class="img-fluid image-avatar rounded-4 shadow-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- Contenu À propos -->
+              <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
+                <div class="carte-propos p-4 rounded-4 shadow-lg">
+                  <h2 class="text-center mb-4 titre-section">
+                    <i class="fas fa-user me-2"></i>À PROPOS DE MOI
+                  </h2>
+                  <div class="contenu-propos">
+                    <p class="mb-3">
+                      Je m'appelle Kevin Senasson et je suis actuellement en
+                      reconversion professionnelle vers le domaine
+                      technologique. Après plusieurs années dans l'armée, j'ai
+                      décidé de suivre ma passion pour le développement
+                      informatique.
+                    </p>
+                    <p class="mb-3">
+                      Actuellement, je suis étudiant en BTS Services
+                      Informatiques aux Organisations (SIO) avec une spécialité
+                      en Solutions Logicielles et Applications Métiers (SLAM) à
+                      IRIS Nice dans le campus MédiaSchool.
+                    </p>
+                    <!-- Paragraphe supplémentaire pour desktop -->
+                    <div class="d-none d-lg-block">
+                      <p class="mb-3">
+                        En dehors de mes études je suis passionné par le
+                        basket-ball et le tir sportif mais aussi un passionné
+                        des jeux vidéo et cinéma. J'aime aussi l'astronomie et
+                        la science fiction. J'ai un esprit curieux et j'aime
+                        apprendre de nouvelles choses. Je suis toujours à la
+                        recherche de nouveaux défis et d'opportunités pour
+                        développer mes compétences. Créatif, déterminé et à
+                        l'écoute je sais m'adapter à toutes les situations.
+                      </p>
+                    </div>
+                    <p class="mb-0">
+                      Je suis particulièrement intéressé par le développement
+                      d'applications innovantes. Je suis motivé par l'idée de
+                      contribuer à des projets technologiques et d'apporter des
+                      solutions efficaces aux défis actuels.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liens sociaux -->
+            <div
+              class="text-center mb-5"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <div class="liens-sociaux d-flex justify-content-center gap-4">
+                <a
+                  href="https://www.linkedin.com/feed/"
+                  target="_blank"
+                  class="lien-social lien-linkedin"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+                <a
+                  href="https://github.com/tamdaz/cruml"
+                  target="_blank"
+                  class="lien-social lien-github"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a
+                  href="img/cv kevin senasson.pdf"
+                  target="_blank"
+                  class="lien-social lien-cv"
+                  title="Télécharger CV"
+                >
+                  <i class="fas fa-file fa-2x"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Section Hobbies avec carrousel Full-Height -->
+            <div
+              class="row justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="col-12">
+                <h2 class="text-center mb-5 titre-section">
+                  <i class="fas fa-heart me-2"></i>Mes Hobbies
+                </h2>
+                <!-- Carrousel Bootstrap Full-Height avec overlays -->
+                <div
+                  id="carrouselHobbies"
+                  class="carousel slide carrousel-hobbies-fullheight mb-5"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators indicators-custom">
+                    <button
+                      type="button"
+                      data-bs-target="#carrouselHobbies"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carrouselHobbies"
+                      data-bs-slide-to="1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carrouselHobbies"
+                      data-bs-slide-to="2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carrouselHobbies"
+                      data-bs-slide-to="3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carrouselHobbies"
+                      data-bs-slide-to="4"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <!-- Slide 1: Jeux d'échecs -->
+                    <div class="carousel-item active">
+                      <div class="hobby-slide-container">
+                        <img
+                          src="img/thumb-1920-984589.jpg"
+                          class="d-block w-100 image-hobby-fullheight"
+                          alt="Jeux d'échecs"
+                        />
+                        <div class="hobby-overlay-content">
+                          <div class="hobby-content-wrapper">
+                            <div class="hobby-icon-container">
+                              <i class="fas fa-chess hobby-main-icon"></i>
+                            </div>
+                            <h3 class="hobby-title">Les Échecs</h3>
+                            <p class="hobby-subtitle">Stratégie et réflexion</p>
+                            <div class="hobby-description">
+                              <p>
+                                Jeu de stratégie millénaire qui développe la
+                                logique, la patience et la capacité
+                                d'anticipation. Un art de la guerre sur
+                                échiquier qui stimule l'intellect.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 2: Développement -->
+                    <div class="carousel-item">
+                      <div class="hobby-slide-container">
+                        <img
+                          src="img/web-development-application-design-coding-and-programming-on-laptop-and-smartphone-concept-with-programming-language-and-program-code-and-layout-on-screen-vector.jpg"
+                          class="d-block w-100 image-hobby-fullheight"
+                          alt="Développement"
+                        />
+                        <div class="hobby-overlay-content">
+                          <div class="hobby-content-wrapper">
+                            <div class="hobby-icon-container">
+                              <i class="fas fa-code hobby-main-icon"></i>
+                            </div>
+                            <h3 class="hobby-title">Développement Web</h3>
+                            <p class="hobby-subtitle">Création numérique</p>
+                            <div class="hobby-description">
+                              <p>
+                                Passion pour la création d'applications et de
+                                sites web avec les dernières technologies. Un
+                                univers en constante évolution qui stimule la
+                                créativité et la logique.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 3: Ski -->
+                    <div class="carousel-item">
+                      <div class="hobby-slide-container">
+                        <img
+                          src="img/saut-en-ski6.webp"
+                          class="d-block w-100 image-hobby-fullheight"
+                          alt="Ski"
+                        />
+                        <div class="hobby-overlay-content">
+                          <div class="hobby-content-wrapper">
+                            <div class="hobby-icon-container">
+                              <i class="fas fa-skiing hobby-main-icon"></i>
+                            </div>
+                            <h3 class="hobby-title">Ski</h3>
+                            <p class="hobby-subtitle">Sport d'hiver exaltant</p>
+                            <div class="hobby-description">
+                              <p>
+                                Sport d'hiver qui allie technique, vitesse et
+                                communion avec la nature. Une activité qui
+                                procure des sensations uniques dans des paysages
+                                époustouflants.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 4: Gaming -->
+                    <div class="carousel-item">
+                      <div class="hobby-slide-container">
+                        <img
+                          src="img/The-Best-Gaming-Mice-of-2024.jpg"
+                          class="d-block w-100 image-hobby-fullheight"
+                          alt="Gaming"
+                        />
+                        <div class="hobby-overlay-content">
+                          <div class="hobby-content-wrapper">
+                            <div class="hobby-icon-container">
+                              <i class="fas fa-gamepad hobby-main-icon"></i>
+                            </div>
+                            <h3 class="hobby-title">Gaming</h3>
+                            <p class="hobby-subtitle">Univers interactif</p>
+                            <div class="hobby-description">
+                              <p>
+                                Exploration d'univers immersifs qui stimulent la
+                                réflexion stratégique et les réflexes. Une
+                                passion qui allie divertissement et
+                                développement de compétences.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 5: Basket-ball -->
+                    <div class="carousel-item">
+                      <div class="hobby-slide-container">
+                        <img
+                          src="img/wp3402205.webp"
+                          class="d-block w-100 image-hobby-fullheight"
+                          alt="Basket-ball"
+                        />
+                        <div class="hobby-overlay-content">
+                          <div class="hobby-content-wrapper">
+                            <div class="hobby-icon-container">
+                              <i
+                                class="fas fa-basketball-ball hobby-main-icon"
+                              ></i>
+                            </div>
+                            <h3 class="hobby-title">Basket-ball</h3>
+                            <p class="hobby-subtitle">
+                              Sport collectif dynamique
+                            </p>
+                            <div class="hobby-description">
+                              <p>
+                                Sport collectif passionnant qui développe
+                                l'agilité, la coordination et l'esprit d'équipe.
+                                Une activité qui allie technique, stratégie et
+                                condition physique.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contrôles du carrousel modernisés -->
+                  <button
+                    class="carousel-control-prev control-fullheight"
+                    type="button"
+                    data-bs-target="#carrouselHobbies"
+                    data-bs-slide="prev"
+                  >
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button
+                    class="carousel-control-next control-fullheight"
+                    type="button"
+                    data-bs-target="#carrouselHobbies"
+                    data-bs-slide="next"
+                  >
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="formation" class="section-formation py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+          <!-- Image de l'école -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <img
+              src="img/photo.jpg"
+              alt="Logo école IRIS Nice"
+              class="img-fluid image-ecole rounded-4 shadow-lg"
+            />
+          </div>
+
+          <!-- Contenu formation -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="carte-formation p-4 rounded-4 shadow-lg">
+              <h2 class="titre-formation mb-4 text-center">
+                Présentation de ma formation en BTS SIO
+              </h2>
+
+              <p class="texte-formation mb-3">
+                Je suis actuellement étudiant en BTS Services Informatiques aux
+                Organisations (SIO), spécialité Solutions Logicielles et
+                Applications Métier (SLAM). Cette formation de deux ans me
+                prépare aux métiers de l'informatique en me dotant de
+                compétences techniques et pratiques.
+              </p>
+
+              <!-- Compétences acquises -->
+              <div class="competences-formation p-3 rounded-3 mb-3">
+                <p class="fw-bold mb-3">
+                  Au cours de ma formation, j'ai acquis des compétences solides
+                  dans les domaines suivants :
+                </p>
+                <ul class="liste-competences">
+                  <li>
+                    <strong>Languages et scripts :</strong> Python, Java, HTML,
+                    CSS, JavaScript
+                  </li>
+                  <li>
+                    <strong>Bases de données :</strong> PHP MyAdmin, MySQL, SQL
+                  </li>
+                  <li>
+                    <strong>Systèmes :</strong> Windows 10 et 11, Linux, macOS
+                  </li>
+                  <li><strong>Matériel :</strong> PC et compatibles Mac</li>
+                  <li>
+                    <strong>Environnements de développement (IDE) :</strong>
+                    Eclipse, VS Code
+                  </li>
+                  <li>
+                    <strong>Gestion de projet :</strong> Merise, Merise 2, UML
+                  </li>
+                  <li>
+                    <strong>Algorithmie :</strong> procédurale, événementielle,
+                    orientée objet
+                  </li>
+                </ul>
+              </div>
+
+              <p class="texte-formation mb-3">
+                J'ai également eu l'opportunité de réaliser plusieurs projets
+                concrets en équipe, ce qui m'a permis de développer mes
+                compétences en gestion de projet et en communication. Grâce à
+                cette formation, je suis capable de concevoir et développer des
+                applications informatiques adaptées aux besoins des
+                utilisateurs.
+              </p>
+
+              <p class="texte-formation mb-4">
+                En plus de mes compétences techniques, je suis passionné par
+                l'innovation et la résolution de problèmes complexes. Mon
+                objectif est de devenir un professionnel de l'informatique
+                polyvalent et compétent.
+              </p>
+
+              <!-- Lien vers l'école -->
+              <div class="text-center">
+                <a
+                  href="https://ecoleiris.fr/nice/bts-sio-slam"
+                  class="btn bouton-ecole px-4 py-2"
+                  target="_blank"
+                >
+                  <i class="fas fa-external-link-alt me-2"></i>En Savoir Plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section-projets py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 titre-section" data-aos="fade-down">
+          <i class="fas fa-puzzle-piece me-2"></i>Mes Projets
+        </h2>
+
+        <!-- Carrousel Swiper pour les projets -->
+        <div
+          class="swiper conteneur-projets"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="swiper-wrapper">
+            <!-- Projet Frontend -->
+            <div class="swiper-slide">
+              <div class="carte-projet h-100 shadow-lg">
+                <img
+                  src="img/frontend.jpg"
+                  class="carte-projet-image"
+                  alt="Frontend Development"
+                />
+                <div class="carte-projet-corps p-4">
+                  <h3 class="carte-projet-titre mb-3">
+                    <i class="fas fa-desktop me-2"></i>Frontend
+                  </h3>
+                  <p class="badge-langage mb-2">Développement web :</p>
+                  <p class="fw-bold">Languages utilisés :</p>
+                  <ul class="liste-projets">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Backend -->
+            <div class="swiper-slide">
+              <div class="carte-projet h-100 shadow-lg">
+                <img
+                  src="img/backend.jpg"
+                  class="carte-projet-image"
+                  alt="Backend Development"
+                />
+                <div class="carte-projet-corps p-4">
+                  <h3 class="carte-projet-titre mb-3">
+                    <i class="fas fa-server me-2"></i>Backend
+                  </h3>
+                  <p class="badge-langage mb-2">Développement logiciel :</p>
+                  <p class="fw-bold">Languages utilisés :</p>
+                  <ul class="liste-projets">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Base de données -->
+            <div class="swiper-slide">
+              <div class="carte-projet h-100 shadow-lg">
+                <img
+                  src="img/basededonnées.jpg"
+                  class="carte-projet-image"
+                  alt="Base de données"
+                />
+                <div class="carte-projet-corps p-4">
+                  <h3 class="carte-projet-titre mb-3">
+                    <i class="fas fa-database me-2"></i>Base de données
+                  </h3>
+                  <p class="badge-langage mb-2">
+                    Création de base de données :
+                  </p>
+                  <p class="fw-bold">Technologies utilisées :</p>
+                  <ul class="liste-projets">
+                    <li>PHP MyAdmin</li>
+                    <li>MySQL</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Analyse -->
+            <div class="swiper-slide">
+              <div class="carte-projet h-100 shadow-lg">
+                <img
+                  src="img/analyse.png"
+                  class="carte-projet-image"
+                  alt="Analyse"
+                />
+                <div class="carte-projet-corps p-4">
+                  <h3 class="carte-projet-titre mb-3">
+                    <i class="fas fa-chart-line me-2"></i>Analyse
+                  </h3>
+                  <p class="badge-langage mb-2">Maîtrise d'ouvrage :</p>
+                  <p class="fw-bold">Méthodes utilisées :</p>
+                  <ul class="liste-projets">
+                    <li>Rédaction cahier des charges</li>
+                    <li>Rédaction spécification fonctionnelle</li>
+                    <li>Rédaction spécification technique</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projet Maquettage -->
+            <div class="swiper-slide">
+              <div class="carte-projet h-100 shadow-lg">
+                <img
+                  src="img/maquettage.jpg"
+                  class="carte-projet-image"
+                  alt="Maquettage"
+                />
+                <div class="carte-projet-corps p-4">
+                  <h3 class="carte-projet-titre mb-3">
+                    <i class="fas fa-paint-brush me-2"></i>Maquettage
+                  </h3>
+                  <p class="badge-langage mb-2">Conception de maquettage :</p>
+                  <p class="fw-bold">Outils utilisés :</p>
+                  <ul class="liste-projets">
+                    <li>Figma</li>
+                    <li>Canva</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination du carrousel -->
+          <div class="conteneur-pagination">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Bouton découvrir -->
+        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+          <a
+            href="projets-bootstrap.html"
+            class="btn bouton-decouvrir px-5 py-3"
+          >
+            <i class="fas fa-arrow-right me-2"></i>Découvrir mes projets
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="section-veille py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 titre-section" data-aos="fade-down">
+          <i class="fas fa-earth-americas me-2"></i>Veille Technologique
+        </h2>
+
+        <!-- Définition et outils -->
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4" data-aos="fade-right">
+            <div class="carte-veille h-100 p-4 rounded-4 shadow-lg">
+              <h3 class="mb-3">
+                <i class="fas fa-book me-2"></i>Qu'est-ce que la veille
+                technologique ?
+              </h3>
+              <p>
+                La veille technologique, élément de la veille stratégique,
+                consiste à surveiller les évolutions techniques et les
+                innovations dans un secteur d'activité donné. Elle comprend
+                notamment la surveillance, la collecte, le partage et la
+                diffusion d'informations permettant d'anticiper ou de s'informer
+                sur des changements en matière de recherche, développement,
+                brevets, lancement de nouveaux produits, matériaux, processus,
+                concepts, innovations de fabrication, etc.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="200">
+            <div class="carte-veille h-100 p-4 rounded-4 shadow-lg">
+              <h3 class="mb-3">
+                <i class="fas fa-tools me-2"></i>Outils de ma veille
+                technologique
+              </h3>
+              <p>
+                J'ai effectué ma veille technologique grâce à plusieurs sources
+                spécialisées : des articles de presse, chatGPT, ainsi que des
+                sites de référence comme realite-virtuelle.com, wanteed.fr,
+                robot-magazine.fr, et lemondeinformatique.fr pour me tenir au
+                courant des dernières actualités technologiques et des
+                innovations en réalité augmentée.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tableau de synthèse de ma veille -->
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12">
+            <div class="carte-veille p-4 rounded-4 shadow-lg">
+              <h3 class="text-center mb-4">
+                <i class="fas fa-table me-2"></i>Synthèse de ma veille
+                technologique
+              </h3>
+
+              <div class="table-responsive">
+                <table class="table table-hover table-striped veille-table">
+                  <thead class="table-dark">
+                    <tr>
+                      <th scope="col">
+                        <i class="fas fa-info-circle me-1"></i>Aspect
+                      </th>
+                      <th scope="col">
+                        <i class="fas fa-list-ul me-1"></i>Détails
+                      </th>
+                      <th scope="col">
+                        <i class="fas fa-chart-bar me-1"></i>Métrique
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Durée de la veille</strong></td>
+                      <td>
+                        Veille continue depuis 10 mois (septembre 2024 - juin
+                        2025)
+                      </td>
+                      <td><span class="badge bg-primary">10 mois</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Fréquence</strong></td>
+                      <td>Consultation des Sources hebdomadaires</td>
+                      <td><span class="badge bg-success">7j/7</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Sources principales</strong></td>
+                      <td>
+                        <ul class="mb-0">
+                          <li>article de presse</li>
+                          <li>chatGPT</li>
+                          <li>realite-virtuelle.com</li>
+                          <li>lemondeinformatique.fr</li>
+                          <li>robot-magazine.fr</li>
+                          <li>wanteed.fr</li>
+                        </ul>
+                      </td>
+                      <td><span class="badge bg-info">6 sources</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Articles analysés</strong></td>
+                      <td>
+                        Lecture et analyse approfondie d'articles techniques
+                      </td>
+                      <td>
+                        <span class="badge bg-warning text-dark"
+                          >20 articles</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Technologies suivies</strong></td>
+                      <td>Réalité Augmentée, IA/ML, WebXR, Computer Vision</td>
+                      <td>
+                        <span class="badge bg-secondary">4 domaines</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Méthodologie</strong></td>
+                      <td>
+                        <ol class="mb-0">
+                          <li>Collecte d'informations (flux RSS)</li>
+                          <li>Filtrage et tri par pertinence</li>
+                          <li>Analyse critique des sources</li>
+                          <li>Synthèse et classification</li>
+                          <li>Identification des tendances</li>
+                        </ol>
+                      </td>
+                      <td><span class="badge bg-danger">5 étapes</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Outils utilisés</strong></td>
+                      <td>
+                        Notion (prise de notes), recherche Google, chatGPT,
+                      </td>
+                      <td><span class="badge bg-purple">3 outils</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>Livrables produits</strong></td>
+                      <td>
+                        Rapport de synthèse, cartographie des innovations,
+                        présentation des tendances émergentes
+                      </td>
+                      <td><span class="badge bg-primary">3 livrables</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Indicateurs clés -->
+              <div class="row mt-4">
+                <div class="col-md-3 text-center">
+                  <div class="indicateur-veille p-3 rounded h-100">
+                    <i class="fas fa-clock text-primary fa-2x mb-2"></i>
+                    <h5>2 heures/semaine</h5>
+                    <small class="text-white">Temps dédié hebdomadaire</small>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="indicateur-veille p-3 rounded h-100">
+                    <i class="fas fa-eye text-success fa-2x mb-2"></i>
+                    <h5>85%</h5>
+                    <small class="text-white">Fiabilité des sources</small>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="indicateur-veille p-3 rounded h-100">
+                    <i class="fas fa-trending-up text-warning fa-2x mb-2"></i>
+                    <h5>6</h5>
+                    <small class="text-white">Tendances suivies</small>
+                  </div>
+                </div>
+                <div class="col-md-3 text-center">
+                  <div class="indicateur-veille p-3 rounded h-100">
+                    <i class="fas fa-star text-info fa-2x mb-2"></i>
+                    <h5>Durée</h5>
+                    <small class="text-white">10 mois</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galerie d'innovations -->
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-center mb-4 titre-sous-section">
+            <i class="fas fa-rocket me-2"></i>Innovations marquantes en Réalité
+            Augmentée
+          </h3>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <a
+                href="https://www.microsoft.com/fr-fr/hololens"
+                target="_blank"
+                class="carte-innovation text-decoration-none"
+              >
+                <div class="carte-innovation-image">
+                  <img
+                    src="img/microsofthololens.jpg"
+                    class="img-fluid"
+                    alt="Microsoft HoloLens"
+                  />
+                </div>
+                <div class="carte-innovation-info p-3">
+                  <h4>Microsoft HoloLens</h4>
+                  <span class="badge-date">2016</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <a
+                href="https://www.magicleap.com/"
+                target="_blank"
+                class="carte-innovation text-decoration-none"
+              >
+                <div class="carte-innovation-image">
+                  <img
+                    src="img/magicleapone.jpg"
+                    class="img-fluid"
+                    alt="Magic Leap"
+                  />
+                </div>
+                <div class="carte-innovation-info p-3">
+                  <h4>Magic Leap One</h4>
+                  <span class="badge-date">2018</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <a
+                href="https://www.apple.com/fr/apple-vision-pro/"
+                target="_blank"
+                class="carte-innovation text-decoration-none"
+              >
+                <div class="carte-innovation-image">
+                  <img
+                    src="img/applevisionpro.jpg"
+                    class="img-fluid"
+                    alt="Apple Vision Pro"
+                  />
+                </div>
+                <div class="carte-innovation-info p-3">
+                  <h4>Apple Vision Pro</h4>
+                  <span class="badge-date">2024</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <a
+                href="https://about.meta.com/realitylabs/"
+                target="_blank"
+                class="carte-innovation text-decoration-none"
+              >
+                <div class="carte-innovation-image">
+                  <img
+                    src="img/rayban.jpg"
+                    class="img-fluid"
+                    alt="Ray-Ban Meta"
+                  />
+                </div>
+                <div class="carte-innovation-info p-3">
+                  <h4>Ray-Ban Meta Smart Glasses</h4>
+                  <span class="badge-date">2023</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <a
+                href="https://www.google.com/glass/start/"
+                target="_blank"
+                class="carte-innovation text-decoration-none"
+              >
+                <div class="carte-innovation-image">
+                  <img
+                    src="img/googleglass.webp"
+                    class="img-fluid"
+                    alt="Google Glass"
+                  />
+                </div>
+                <div class="carte-innovation-info p-3">
+                  <h4>Google Glass Enterprise</h4>
+                  <span class="badge-date">2019</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contenu détaillé de la veille -->
+        <div class="accordeon-veille" data-aos="fade-up" data-aos-delay="400">
+          <div class="accordion" id="accordeonVeille">
+            <!-- Sujet -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#sujetVeille"
+                >
+                  <i class="fas fa-bullseye me-2"></i>
+                  Sujet : La réalité augmentée dans les métiers techniques de
+                  demain
+                </button>
+              </h2>
+              <div id="sujetVeille" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p>
+                    Dans un monde en constante mutation technologique, la
+                    réalité augmentée (RA) s'impose comme une innovation
+                    majeure. En superposant des éléments numériques à notre
+                    environnement réel, elle transforme les pratiques
+                    professionnelles, notamment dans les métiers techniques.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technologie -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#technologieVeille"
+                >
+                  <i class="fas fa-laptop-code me-2"></i>
+                  Présentation de la technologie
+                </button>
+              </h2>
+              <div id="technologieVeille" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>
+                    La réalité augmentée consiste à enrichir le monde réel avec
+                    des éléments virtuels (textes, images, animations 3D)
+                    visibles via des lunettes connectées, smartphones ou
+                    tablettes. Contrairement à la réalité virtuelle, elle ne
+                    remplace pas le réel mais le complète.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Usages -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#usagesVeille"
+                >
+                  <i class="fas fa-wrench me-2"></i>
+                  Usages actuels dans les métiers techniques
+                </button>
+              </h2>
+              <div id="usagesVeille" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>Maintenance assistée :</strong> les techniciens
+                      utilisent des lunettes RA pour visualiser des schémas
+                    </li>
+                    <li>
+                      <strong>Formation immersive :</strong> apprentissage de
+                      gestes techniques complexes
+                    </li>
+                    <li>
+                      <strong>Assistance à distance :</strong> guidage d'un
+                      technicien via flux vidéo augmenté
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Impacts -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#impactsVeille"
+                >
+                  <i class="fas fa-chart-line me-2"></i>
+                  Impacts sur les métiers
+                </button>
+              </h2>
+              <div id="impactsVeille" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="carte-impact p-3 rounded">
+                        <h5>Évolution des compétences</h5>
+                        <p>Maîtrise des outils numériques et interfaces RA</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="carte-impact p-3 rounded">
+                        <h5>Nouveaux métiers</h5>
+                        <p>Développeur AR, designer UX RA, ingénieur vision</p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="carte-impact p-3 rounded">
+                        <h5>Amélioration productivité</h5>
+                        <p>Réduction des erreurs, interventions plus rapides</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Perspectives -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#perspectivesVeille"
+                >
+                  <i class="fas fa-rocket me-2"></i>
+                  Perspectives futures
+                </button>
+              </h2>
+              <div id="perspectivesVeille" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>Miniaturisation :</strong> lunettes plus légères
+                      et puissantes
+                    </li>
+                    <li>
+                      <strong>Synergie IA/IoT :</strong> diagnostics prédictifs
+                      automatisés
+                    </li>
+                    <li>
+                      <strong>Défis éthiques :</strong> fracture numérique,
+                      protection des données
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Synthèse -->
+    <section id="synthese" class="section-synthese py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 titre-section" data-aos="fade-down">
+          <i class="fas fa-square-check me-2"></i>Synthèse de Compétences - BTS
+          SIO SLAM
+        </h2>
+
+        <!-- Gestion du Patrimoine Informatique -->
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="carte-synthese p-4 rounded-4 shadow-lg">
+            <h3 class="text-center mb-4 titre-patrimoine">
+              <i class="fas fa-building me-2"></i>Gestion du Patrimoine
+              Informatique
+            </h3>
+
+            <div class="row">
+              <div class="col-lg-12 mb-4">
+                <h4 class="sous-titre-synthese">Définition</h4>
+                <p>
+                  La gestion du patrimoine informatique consiste à inventorier,
+                  maintenir, sécuriser et optimiser l'ensemble des ressources
+                  informatiques d'une organisation : postes de travail,
+                  serveurs, logiciels, licences, périphériques, etc.
+                </p>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <h4 class="sous-titre-synthese">Activités principales</h4>
+                <ul class="liste-activites">
+                  <li>
+                    <strong>Inventaire du parc :</strong> suivi via GLPI, OCS
+                    Inventory
+                  </li>
+                  <li><strong>Maintenance :</strong> préventive et curative</li>
+                  <li>
+                    <strong>Gestion des licences :</strong> conformité légale
+                  </li>
+                  <li>
+                    <strong>Suivi des contrats :</strong> garanties,
+                    fournisseurs
+                  </li>
+                  <li>
+                    <strong>Sécurité :</strong> protection physique, sauvegardes
+                  </li>
+                  <li>
+                    <strong>Documentation :</strong> procédures, historique
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <h4 class="sous-titre-synthese">Outils utilisés</h4>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="carte-outil p-2 text-center rounded">
+                      <strong>GLPI</strong><br />
+                      <small>Gestion des incidents</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="carte-outil p-2 text-center rounded">
+                      <strong>OCS Inventory</strong><br />
+                      <small>Inventaire automatique</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="carte-outil p-2 text-center rounded">
+                      <strong>Active Directory</strong><br />
+                      <small>Gestion utilisateurs</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="carte-outil p-2 text-center rounded">
+                      <strong>WSUS</strong><br />
+                      <small>Mises à jour Windows</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blocs de Compétences BTS SIO -->
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="carte-synthese p-4 rounded-4 shadow-lg">
+            <h3 class="text-center mb-4 titre-competences">
+              <i class="fas fa-graduation-cap me-2"></i>Référentiel BTS SIO SLAM
+              - Blocs de Compétences
+            </h3>
+
+            <div class="row g-4">
+              <!-- Bloc 1 -->
+              <div class="col-lg-4">
+                <div class="bloc-competence h-100 p-3 rounded-3">
+                  <h4 class="titre-bloc mb-3">
+                    <span class="numero-bloc">1</span>
+                    Support et mise à disposition
+                  </h4>
+                  <ul class="liste-bloc">
+                    <li>Gérer le patrimoine informatique</li>
+                    <li>Répondre aux incidents</li>
+                    <li>Développer la présence en ligne</li>
+                    <li>Travailler en mode projet</li>
+                    <li>Mettre à disposition un service</li>
+                    <li>Organiser son développement professionnel</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Bloc 2 -->
+              <div class="col-lg-4">
+                <div class="bloc-competence h-100 p-3 rounded-3">
+                  <h4 class="titre-bloc mb-3">
+                    <span class="numero-bloc">2</span>
+                    Conception et développement
+                  </h4>
+                  <ul class="liste-bloc">
+                    <li>Analyser un besoin et son contexte</li>
+                    <li>Concevoir l'architecture</li>
+                    <li>Modéliser et développer</li>
+                    <li>Exploiter des frameworks</li>
+                    <li>Intégrer les technologies web/mobile</li>
+                    <li>Gérer les données</li>
+                    <li>Assurer la maintenance</li>
+                    <li>Rédiger la documentation</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Bloc 3 -->
+              <div class="col-lg-4">
+                <div class="bloc-competence h-100 p-3 rounded-3">
+                  <h4 class="titre-bloc mb-3">
+                    <span class="numero-bloc">3</span>
+                    Cybersécurité
+                  </h4>
+                  <ul class="liste-bloc">
+                    <li>Protéger les données personnelles</li>
+                    <li>Préserver l'identité numérique</li>
+                    <li>Sécuriser les équipements</li>
+                    <li>Garantir la disponibilité</li>
+                    <li>Assurer la cybersécurité applicative</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section de téléchargements -->
+        <div class="row g-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-6">
+            <div
+              class="carte-telechargement h-100 p-4 text-center rounded-4 shadow-lg"
+            >
+              <i class="fas fa-download fa-3x mb-3 icone-telechargement"></i>
+              <h4 class="mb-3">Gestion Patrimoine Informatique</h4>
+              <p class="mb-4">
+                Pour en savoir plus sur la gestion de patrimoine informatique,
+                téléchargez ce document détaillé (lire de la page 27 à 32).
+              </p>
+              <a
+                href="img/BTS_ServicesInformatiquesOrganisations2019.pdf"
+                class="btn bouton-telechargement px-4 py-2"
+                download="BTS_ServicesInformatiquesOrganisations2019.pdf"
+              >
+                <i class="fas fa-file-pdf me-2"></i>Télécharger
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="carte-telechargement h-100 p-4 text-center rounded-4 shadow-lg"
+            >
+              <i class="fas fa-download fa-3x mb-3 icone-telechargement"></i>
+              <h4 class="mb-3">Compétences BTS SIO SLAM</h4>
+              <p class="mb-4">
+                Découvrez en détail toutes les compétences acquises lors de ma
+                spécialité SLAM dans ce tableau Excel interactif.
+              </p>
+              <a
+                href="img/8 - BTS SIO - Annexe 8-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2024.xlsx"
+                class="btn bouton-telechargement px-4 py-2"
+                download="8 - BTS SIO - Annexe 8-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2024.xlsx"
+              >
+                <i class="fas fa-file-excel me-2"></i>Télécharger Excel
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 titre-section" data-aos="fade-down">
+          <i class="fas fa-envelope me-2"></i>Me Contacter
+        </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Conteneur principal du contact -->
+            <div
+              class="conteneur-contact position-relative"
+              style="min-height: auto; overflow: visible"
+            >
+              <!-- Contact direct (visible par défaut) -->
+              <div class="contact-direct active" id="contactDirect">
+                <div
+                  class="carte-contact-direct p-5 rounded-4 shadow-lg text-center"
+                  data-aos="zoom-in"
+                >
+                  <h3 class="mb-4 titre-contact-direct">
+                    <i class="fas fa-phone me-2"></i>Contact Direct
+                  </h3>
+                  <p class="mb-4 description-contact">
+                    Voici mes coordonnées pour me contacter directement :
+                  </p>
+
+                  <!-- Liens de contact -->
+                  <div class="liens-contact-direct mb-4">
+                    <a
+                      href="mailto:kevin.senasson456@outlook.fr"
+                      class="btn lien-contact-email mb-3 d-block d-md-inline-block me-md-3"
+                    >
+                      <i class="fas fa-envelope me-2"></i>Me contacter par mail
+                    </a>
+                    <a
+                      href="tel:+33682144351"
+                      class="btn lien-contact-tel mb-3 d-block d-md-inline-block"
+                    >
+                      <i class="fas fa-phone me-2"></i>Me contacter par
+                      téléphone
+                    </a>
+                  </div>
+
+                  <!-- Réseaux sociaux -->
+                  <div class="reseaux-contact mb-4">
+                    <h5 class="mb-3">Mes réseaux :</h5>
+                    <div
+                      class="liens-reseaux d-flex justify-content-center gap-3"
+                    >
+                      <a
+                        href="https://www.linkedin.com/feed/"
+                        target="_blank"
+                        class="lien-reseau lien-linkedin"
+                        title="LinkedIn"
+                      >
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                      </a>
+                      <a
+                        href="https://github.com/tamdaz/cruml"
+                        target="_blank"
+                        class="lien-reseau lien-github"
+                        title="GitHub"
+                      >
+                        <i class="fab fa-github fa-2x"></i>
+                      </a>
+                      <a
+                        href="img/cv kevin senasson.pdf"
+                        target="_blank"
+                        class="lien-reseau lien-cv"
+                        title="CV"
+                      >
+                        <i class="fas fa-file fa-2x"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Bouton pour afficher le formulaire -->
+                  <button
+                    class="btn bouton-formulaire px-4 py-3"
+                    onclick="afficherFormulaire()"
+                  >
+                    <i class="fas fa-edit me-2"></i>Me contacter par formulaire
+                  </button>
+                </div>
+              </div>
+
+              <!-- Formulaire de contact (masqué par défaut) -->
+              <div class="contact-formulaire" id="contactFormulaire">
+                <div
+                  class="carte-contact-formulaire p-4 rounded-4 shadow-lg"
+                  data-aos="slide-left"
+                >
+                  <h3 class="text-center mb-4 titre-contact-formulaire">
+                    <i class="fas fa-paper-plane me-2"></i>Contactez-moi par
+                    formulaire
+                  </h3>
+
+                  <form
+                    action="https://formspree.io/f/movelryj"
+                    method="POST"
+                    class="formulaire-contact"
+                  >
+                    <div class="row g-3">
+                      <!-- Nom -->
+                      <div class="col-md-6">
+                        <label for="nom" class="form-label">Nom *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nom"
+                          name="nom"
+                          placeholder="Votre nom"
+                          maxlength="50"
+                          required
+                        />
+                      </div>
+
+                      <!-- Prénom -->
+                      <div class="col-md-6">
+                        <label for="prenom" class="form-label">Prénom *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="prenom"
+                          name="prenom"
+                          placeholder="Votre prénom"
+                          maxlength="50"
+                          required
+                        />
+                      </div>
+
+                      <!-- Email -->
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email *</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Votre email"
+                          maxlength="100"
+                          required
+                        />
+                      </div>
+
+                      <!-- Téléphone -->
+                      <div class="col-md-6">
+                        <label for="telephone" class="form-label"
+                          >Téléphone</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="telephone"
+                          name="telephone"
+                          placeholder="Votre téléphone"
+                          maxlength="10"
+                        />
+                      </div>
+
+                      <!-- Message -->
+                      <div class="col-12">
+                        <label for="message" class="form-label"
+                          >Message *</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          placeholder="Votre message"
+                          rows="5"
+                          required
+                        ></textarea>
+                      </div>
+
+                      <!-- Boutons -->
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between flex-wrap gap-2"
+                        >
+                          <button
+                            type="button"
+                            class="btn bouton-retour"
+                            onclick="afficherContactDirect()"
+                          >
+                            <i class="fas fa-arrow-left me-2"></i>Retour
+                          </button>
+                          <button type="submit" class="btn bouton-envoyer">
+                            <i class="fas fa-paper-plane me-2"></i>Envoyer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pied-de-page bg-dark text-light py-4">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Informations principales -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-3"><i class="fas fa-user me-2"></i>Kevin Senasson</h5>
+            <p class="mb-2">Développeur Junior</p>
+            <p class="mb-0">© 2024 Kevin Senasson. Tous droits réservés.</p>
+          </div>
+
+          <!-- Liens rapides -->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="mb-3"><i class="fas fa-link me-2"></i>Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="mentions-legales-bootstrap.html"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-file-alt me-1"></i>Mentions légales
+                </a>
+              </li>
+              <li class="mb-2">
+                <div class="plan-site-container">
+                  <a
+                    href="#"
+                    class="text-light text-decoration-none plan-site-toggle"
+                    id="planSiteToggle"
+                  >
+                    <i class="fas fa-sitemap me-1"></i>Plan du site
+                    <i class="fas fa-chevron-down ms-1 plan-site-arrow"></i>
+                  </a>
+
+                  <!-- Menu déroulant du plan de site -->
+                  <div class="plan-site-dropdown" id="planSiteDropdown">
+                    <div class="plan-site-content">
+                      <!-- Navigation principale -->
+                      <div class="plan-site-section">
+                        <h6 class="plan-site-title">
+                          <i class="fas fa-compass me-1"></i>Navigation
+                        </h6>
+                        <ul class="plan-site-links">
+                          <li>
+                            <a href="#accueil"
+                              ><i class="fas fa-home me-1"></i>Accueil</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#formation"
+                              ><i class="fas fa-graduation-cap me-1"></i
+                              >Formation</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#projets"
+                              ><i class="fas fa-project-diagram me-1"></i
+                              >Projets</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#apropos" data-scroll="veille"
+                              ><i class="fas fa-search me-1"></i>Veille
+                              Technologique</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#synthese"
+                              ><i class="fas fa-chart-line me-1"></i>Synthèse</a
+                            >
+                          </li>
+                          <li>
+                            <a href="#contact"
+                              ><i class="fas fa-envelope me-1"></i>Contact</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Pages annexes -->
+                      <div class="plan-site-section">
+                        <h6 class="plan-site-title">
+                          <i class="fas fa-external-link-alt me-1"></i>Pages
+                        </h6>
+                        <ul class="plan-site-links">
+                          <li>
+                            <a href="projets-bootstrap.html"
+                              ><i class="fas fa-folder me-1"></i>Page Projets</a
+                            >
+                          </li>
+                          <li>
+                            <a href="mentions-legales-bootstrap.html"
+                              ><i class="fas fa-file-alt me-1"></i>Mentions
+                              Légales</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Liens externes -->
+                      <div class="plan-site-section">
+                        <h6 class="plan-site-title">
+                          <i class="fas fa-share-alt me-1"></i>Liens externes
+                        </h6>
+                        <ul class="plan-site-links">
+                          <li>
+                            <a
+                              href="https://www.linkedin.com/feed/"
+                              target="_blank"
+                              ><i class="fab fa-linkedin me-1"></i>LinkedIn</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="https://github.com/tamdaz/cruml"
+                              target="_blank"
+                              ><i class="fab fa-github me-1"></i>GitHub</a
+                            >
+                          </li>
+                          <li>
+                            <a href="img/cv kevin senasson.pdf" target="_blank"
+                              ><i class="fas fa-file-pdf me-1"></i>Télécharger
+                              CV</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact et réseaux -->
+          <div class="col-lg-4 col-md-12">
+            <h5 class="mb-3">
+              <i class="fas fa-address-book me-2"></i>Contact & Réseaux
+            </h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="mailto:kevin.senasson456@outlook.fr"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-envelope me-1"></i>Email
+                </a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="tel:+33682144351"
+                  class="text-light text-decoration-none"
+                >
+                  <i class="fas fa-phone me-1"></i>Téléphone
+                </a>
+              </li>
+            </ul>
+
+            <!-- Réseaux sociaux footer -->
+            <div class="liens-reseaux-footer d-flex gap-3 mt-3">
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="_blank"
+                class="text-light"
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in fa-lg"></i>
+              </a>
+              <a
+                href="https://github.com/tamdaz/cruml"
+                target="_blank"
+                class="text-light"
+                title="GitHub"
+              >
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+              <a
+                href="img/cv kevin senasson.pdf"
+                target="_blank"
+                class="text-light"
+                title="Télécharger CV"
+              >
+                <i class="fas fa-file-pdf fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button
+      id="boutonRetourHaut"
+      class="btn-retour-haut"
+      title="Retour en haut"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) pour les animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Script personnalisé Bootstrap -->
+    <script src="script-bootstrap.js"></script>
+  </body>
+</html>
