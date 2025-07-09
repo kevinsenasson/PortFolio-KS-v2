@@ -938,6 +938,9 @@ h6 {
   color: inherit;
   text-decoration: none;
   border: 2px solid transparent;
+  height: 420px; /* Hauteur fixe pour uniformiser */
+  display: flex;
+  flex-direction: column;
 }
 
 .carte-innovation:hover {
@@ -953,6 +956,7 @@ h6 {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  flex-shrink: 0; /* Empêche l'image de rétrécir */
 }
 
 .carte-innovation-image img {
@@ -971,6 +975,11 @@ h6 {
   background: var(--arriere-plan-sombre);
   color: var(--couleur-secondaire);
   text-align: center;
+  flex: 1; /* Prend l'espace restant */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem !important; /* Force le padding */
 }
 
 .carte-innovation-info h4 {
@@ -978,6 +987,18 @@ h6 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+/* Description dans les cartes */
+.carte-innovation-info p {
+  color: #b0b0b0 !important; /* Couleur plus visible */
+  font-size: 0.85rem !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1rem !important;
+  flex: 1; /* Prend l'espace disponible */
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 
 /* Badge de date */
@@ -988,6 +1009,12 @@ h6 {
   border-radius: var(--bordure-radius-small);
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+/* Zone des badges en bas de carte */
+.carte-innovation-info .d-flex {
+  margin-top: auto; /* Pousse les badges vers le bas */
+  flex-shrink: 0; /* Empêche de rétrécir */
 }
 
 /* Accordéon de veille */
