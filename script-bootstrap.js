@@ -35,18 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
 // ===================================
 
 /**
- * Initialise la navigation fluide avec scrollspy Bootstrap
+ * Initialise la navigation fluide avec IntersectionObserver
  */
 function initialiserNavigationFluide() {
-    // Configuration du scrollspy Bootstrap
-    const navbarNav = document.querySelector('#menuNavigation');
-    if (navbarNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#menuNavigation',
-            offset: 100 // Offset pour la navbar fixe
-        });
-    }
-    
     // Gestion du clic sur les liens de navigation
     const liensNavigation = document.querySelectorAll('.nav-link[href^="#"]');
     liensNavigation.forEach(lien => {
@@ -69,12 +60,32 @@ function initialiserNavigationFluide() {
                     behavior: 'smooth',
                     block: 'start'
                 });
-                
-                // Mettre à jour l'état actif des liens
-                mettreAJourLienActif(this);
             }
         });
     });
+
+    // Scrollspy manuel : trouve la section dont le haut est juste au-dessus de la navbar
+    const sections = document.querySelectorAll('section[id]');
+    const navOffset = 90;
+
+    function mettreAJourScrollspy() {
+        let current = '';
+        sections.forEach(section => {
+            if (window.scrollY >= section.offsetTop - navOffset) {
+                current = section.getAttribute('id');
+            }
+        });
+        document.querySelectorAll('.nav-link').forEach(lien => {
+            lien.classList.remove('active');
+        });
+        if (current) {
+            const lienActif = document.querySelector('.nav-link[href="#' + current + '"]');
+            if (lienActif) lienActif.classList.add('active');
+        }
+    }
+
+    window.addEventListener('scroll', mettreAJourScrollspy);
+    mettreAJourScrollspy(); // Appel initial
 }
 
 /**
