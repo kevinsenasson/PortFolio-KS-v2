@@ -372,7 +372,12 @@
               data-aos-delay="300"
             >
               <div class="card projet-card h-100">
-                <div class="card-img-container">
+                <div
+                  class="card-img-container"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mediastockModal"
+                  style="cursor: pointer"
+                >
                   <img
                     src="img/Capture d'écran 2025-12-16 173225.png"
                     class="card-img-top"
@@ -400,13 +405,13 @@
                     <span class="badge bg-warning text-dark">JavaScript</span>
                     <span class="badge bg-success">PHP</span>
                   </div>
-                  <a
-                    href="https://github.com/juklau/MediaStock"
-                    target="_blank"
+                  <button
                     class="btn btn-projet"
+                    data-bs-toggle="modal"
+                    data-bs-target="#mediastockModal"
                   >
-                    <i class="fab fa-github me-2"></i>Voir plus
-                  </a>
+                    <i class="fas fa-eye me-2"></i>Voir plus
+                  </button>
                 </div>
               </div>
             </div>
@@ -3337,6 +3342,669 @@
     >
       <i class="fas fa-chevron-up"></i>
     </button>
+
+    <!-- Modal Mediastock -->
+    <div
+      class="modal fade"
+      id="mediastockModal"
+      tabindex="-1"
+      aria-labelledby="mediastockModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="background: #1a1a2e; border: 1px solid rgba(100,108,255,0.3); border-radius: 16px;">
+          <div class="modal-header" style="border-bottom: 1px solid rgba(100,108,255,0.2);">
+            <h5 class="modal-title fw-bold" id="mediastockModalLabel" style="color: #fff;">
+              <i class="fas fa-code me-2" style="color: #646cff;"></i>Mediastock
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <img
+              src="img/Capture d'écran 2025-12-16 173225.png"
+              class="img-fluid w-100"
+              alt="Aperçu Mediastock"
+              style="border-radius: 0; max-height: 300px; object-fit: cover;"
+            />
+            <div class="p-4">
+
+              <!-- Bloc Informations -->
+              <div class="mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-info-circle me-2"></i>Informations
+                </h6>
+                <div class="row gy-2" style="font-size: 0.95rem;">
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-calendar-alt me-2" style="color: #646cff;"></i>Durée
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">6 semaines</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-users me-2" style="color: #646cff;"></i>Équipe
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">Binôme</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-university me-2" style="color: #646cff;"></i>Contexte
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">Formation – 2ème année</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-check-circle me-2" style="color: #646cff;"></i>Statut
+                  </div>
+                  <div class="col-6 col-sm-9">
+                    <span class="badge" style="background: #1a7a3a; color: #fff; font-size: 0.85rem; padding: 5px 12px; border-radius: 6px;">Terminé</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bloc Technologies -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #fff;">Technologies</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge" style="background: #c0392b; font-size: 0.85rem; padding: 6px 12px;">HTML5</span>
+                  <span class="badge" style="background: #2471a3; font-size: 0.85rem; padding: 6px 12px;">CSS3</span>
+                  <span class="badge" style="background: #b7950b; color: #fff; font-size: 0.85rem; padding: 6px 12px;">JavaScript</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #2471a3; color: #7fb3d3; font-size: 0.85rem; padding: 6px 12px;">localStorage</span>
+                </div>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 1. Contexte -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-university me-2"></i>1. Contexte
+                </h6>
+
+                <p class="fw-bold mb-1" style="color: #fff;">Situation</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Ce projet a été réalisé dans le cadre de ma <strong style="color: #fff;">2ème année de BTS SIO SLAM</strong>. L'objectif était de créer une application web permettant de gérer le prêt et le retour de matériel audiovisuel (caméras, micros, éclairages, etc.) dans un établissement scolaire ou une structure culturelle.
+                </p>
+
+                <p class="fw-bold mb-1 mt-3" style="color: #fff;">Organisation</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Projet développé en binôme avec un autre étudiant SLAM sur une période de 6 semaines. Nous avons travaillé en méthode agile avec des sprints hebdomadaires.
+                </p>
+
+                <p class="fw-bold mb-1 mt-3" style="color: #fff;">Problématique</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Comment créer une application web intuitive permettant de suivre en temps réel les prêts de matériel, d'éviter les conflits de réservation et de maintenir un historique complet des emprunts ?
+                </p>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 2. Besoin & Objectifs -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-bullseye me-2"></i>2. Besoin &amp; Objectifs
+                </h6>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Objectifs fonctionnels</p>
+                <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Inventaire du matériel disponible
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Système de création de prêts
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Suivi de l'état du matériel (disponible, emprunté, en maintenance)
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Historique des prêts et retours
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Interface utilisateur simple et rapide
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Recherche et filtrage du matériel
+                  </li>
+                </ul>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Contraintes techniques</p>
+                <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Application web front-end uniquement
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Design responsive et moderne
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Interface intuitive sans formation
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 3. Solution Proposée -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-lightbulb me-2"></i>3. Solution Proposée
+                </h6>
+
+                <p class="fw-bold mb-1" style="color: #fff;">Architecture de l'application</p>
+                <p style="color: #ccc; font-size: 0.95rem; margin-bottom: 0.75rem;">Application web monopage (SPA) avec :</p>
+                <ul style="color: #ccc; font-size: 0.95rem; line-height: 1.9; padding-left: 1.2rem;">
+                  <li><strong style="color: #fff;">HTML5 :</strong> Structure sémantique de la page</li>
+                  <li><strong style="color: #fff;">CSS3 :</strong> Design moderne avec flexbox/grid</li>
+                  <li><strong style="color: #fff;">JavaScript :</strong> Logique métier et gestion des données</li>
+                </ul>
+
+                <!-- Fonctionnalités principales -->
+                <p class="fw-bold mb-3 mt-4" style="color: #fff;">Fonctionnalités principales</p>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                      <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.9rem;">
+                        <i class="fas fa-list me-2"></i>Inventaire
+                      </p>
+                      <p style="color: #aaa; font-size: 0.85rem; margin: 0;">Liste du matériel avec statuts</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                      <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.9rem;">
+                        <i class="fas fa-handshake me-2"></i>Prêts
+                      </p>
+                      <p style="color: #aaa; font-size: 0.85rem; margin: 0;">Création et gestion des emprunts</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                      <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.9rem;">
+                        <i class="fas fa-history me-2"></i>Historique
+                      </p>
+                      <p style="color: #aaa; font-size: 0.85rem; margin: 0;">Suivi complet des mouvements</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                      <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.9rem;">
+                        <i class="fas fa-search me-2"></i>Recherche
+                      </p>
+                      <p style="color: #aaa; font-size: 0.85rem; margin: 0;">Filtrage rapide par catégorie</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc Aperçu visuel -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-image me-2"></i>Aperçu visuel
+                </h6>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                  <img
+                    src="img/Capture d'écran 2025-12-16 173225.png"
+                    class="img-fluid w-100"
+                    alt="Interface principale Mediastock"
+                    style="display: block;"
+                  />
+                </div>
+                <p class="mt-2 text-center" style="color: #888; font-size: 0.82rem;">
+                  <i class="fas fa-info-circle me-1"></i>Capture d'écran de l'interface principale
+                </p>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 4. Réalisation -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-code me-2"></i>4. Réalisation
+                </h6>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Ma contribution</p>
+                <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Interface utilisateur</strong>&nbsp; complète et responsive
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Système de prêts</strong>&nbsp; avec validation des dates
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Filtres et recherche</strong>&nbsp; en temps réel
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Design moderne</strong>&nbsp; avec CSS personnalisé
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Séparateur -->
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc Gantt -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #4da6ff;">
+                  <i class="fas fa-tasks me-2"></i>Gestion du projet (Diagramme de Gantt)
+                </h6>
+
+                <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                  <!-- Lignes Gantt -->
+                  <div class="mb-3">
+                    <!-- Analyse & Conception -->
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 170px;">Analyse &amp; Conception</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 0%; width: 35%; height: 100%; background: #3b82f6; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <!-- Développement Core -->
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 170px;">Développement Core</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 25%; width: 50%; height: 100%; background: #3b82f6; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <!-- Tests & QA -->
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 170px;">Tests &amp; QA</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 62%; width: 20%; height: 100%; background: #22c55e; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <!-- Documentation / Recette -->
+                    <div class="d-flex align-items-center" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 170px;">Documentation / Recette</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 78%; width: 18%; height: 100%; background: #f0c040; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Footer Gantt -->
+                  <div class="d-flex justify-content-between align-items-center mt-3" style="font-size: 0.82rem;">
+                    <span style="color: #888;"><i class="fas fa-calendar me-1"></i>Début : 12/08/2025</span>
+                    <span class="fw-bold" style="color: #4da6ff;">Cycle : Agile </span>
+                    <span style="color: #888;"><i class="fas fa-flag me-1"></i>Fin : 14/09/2025</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 5. Tests & Validation -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-pencil-alt me-2"></i>5. Tests &amp; Validation
+                </h6>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
+                  <table class="table table-dark mb-0" style="font-size: 0.9rem;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04);">TEST</th>
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04);">RÉSULTAT ATTENDU</th>
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04); text-align:center;">STATUT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td style="color:#ccc;">Ajout matériel</td><td style="color:#ccc;">Enregistré dans localStorage</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Création prêt</td><td style="color:#ccc;">Statut matériel mis à jour</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Retour matériel</td><td style="color:#ccc;">Statut redevient disponible</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Recherche</td><td style="color:#ccc;">Filtrage en temps réel</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Responsive</td><td style="color:#ccc;">Affichage mobile adapté</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Persistance données</td><td style="color:#ccc;">Données conservées au refresh</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 6. Difficultés & Solutions -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-exclamation-circle me-2"></i>6. Difficultés &amp; Solutions
+                </h6>
+
+                <!-- Problème 1 -->
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 1 : Gestion du localStorage</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Difficulté à synchroniser les données entre les différentes vues.</p>
+                </div>
+                <!-- Solution 1 -->
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Création d'un module centralisé de gestion des données avec événements personnalisés pour la mise à jour.</p>
+                </div>
+
+                <!-- Problème 2 -->
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 2 : Validation des dates</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Empêcher les dates incohérentes (fin avant début).</p>
+                </div>
+                <!-- Solution 2 -->
+                <div class="rounded-3 p-3 mb-0" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Validation JavaScript avec comparaison de dates et messages d'erreur explicites.</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 7. Captures d'écran -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-image me-2"></i>7. Captures d'écran
+                </h6>
+                <div class="row g-3">
+                  <!-- Page de connexion -->
+                  <div class="col-12 col-md-6">
+                    <p class="mb-2 fw-semibold" style="color: #ccc; font-size: 0.9rem;">
+                      <i class="fas fa-sign-in-alt me-1" style="color:#4da6ff;"></i>Page de connexion
+                    </p>
+                    <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                      <img
+                        src="img/Capture d'écran 2026-04-03 152225.png"
+                        class="img-fluid w-100"
+                        alt="Page de connexion Mediastock"
+                        style="display: block;"
+                      />
+                    </div>
+                    <p class="mt-2 text-center" style="color: #888; font-size: 0.8rem;">
+                      <i class="fas fa-info-circle me-1"></i>Interface d'authentification avec formulaire sécurisé et matériel disponible
+                    </p>
+                  </div>
+                  <!-- Dashboard principal -->
+                  <div class="col-12 col-md-6">
+                    <p class="mb-2 fw-semibold" style="color: #ccc; font-size: 0.9rem;">
+                      <i class="fas fa-th-large me-1" style="color:#4da6ff;"></i>Dashboard principal
+                    </p>
+                    <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                      <img
+                        src="img/Capture d'écran 2025-12-16 173225.png"
+                        class="img-fluid w-100"
+                        alt="Dashboard principal Mediastock"
+                        style="display: block;"
+                      />
+                    </div>
+                    <p class="mt-2 text-center" style="color: #888; font-size: 0.8rem;">
+                      <i class="fas fa-info-circle me-1"></i>Interface de gestion du patrimoine avec création de prêt/restitution et gestion des équipements
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc Tableau Kanban (Notion) -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-th-large me-2"></i>Tableau Kanban (Notion)
+                </h6>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                  <img
+                    src="img/Capture d'écran 2026-04-03 152540.png"
+                    class="img-fluid w-100"
+                    alt="Tableau Kanban Notion - Mediastock"
+                    style="display: block;"
+                  />
+                </div>
+                <p class="mt-2 text-center" style="color: #888; font-size: 0.82rem;">
+                  <i class="fas fa-info-circle me-1"></i>Gestion des tâches avec statuts, priorités (Must/Should) et durées estimées
+                </p>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc Diagramme de Gantt - Planning du projet -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-chart-gantt me-2"></i>Diagramme de Gantt - Planning du projet
+                </h6>
+                <div class="rounded-3 p-3" style="background: #fff; color: #111; font-size: 0.8rem;">
+                  <!-- En-tête -->
+                  <div class="fw-bold mb-2" style="font-size: 0.85rem;">ClassCord 16/06/2025–20/06/2025</div>
+                  <div class="d-flex gap-4 mb-3" style="font-size: 0.78rem; color: #444;">
+                    <span>Rudy Dimino</span>
+                    <span>Début du projet : <strong>lun. 6/16/2025</strong></span>
+                    <span>Semaine d'affichage : <strong>1</strong></span>
+                  </div>
+                  <!-- Table Gantt -->
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-0" style="font-size: 0.75rem; color: #111; background: #fff; min-width: 700px;">
+                      <thead>
+                        <tr style="background: #f0f0f0;">
+                          <th style="min-width:160px;">TÂCHE</th>
+                          <th>ATTRIBUÉE À</th>
+                          <th>AVANCEMENT</th>
+                          <th>DÉBUT</th>
+                          <th>FIN</th>
+                          <th style="text-align:center; min-width:60px;">Lun 16</th>
+                          <th style="text-align:center; min-width:60px;">Mar 17</th>
+                          <th style="text-align:center; min-width:60px;">Mer 18</th>
+                          <th style="text-align:center; min-width:60px;">Jeu 19</th>
+                          <th style="text-align:center; min-width:60px;">Ven 20</th>
+                          <th>Dépendance</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr><td colspan="11" class="fw-bold" style="background:#e8e8e8;">Projet ClassCord</td></tr>
+                        <tr>
+                          <td>1. Gouvernance &amp; Initialisation</td><td>Rudy</td><td>0%</td><td>16/6/25</td><td>16/6/25</td>
+                          <td style="background:#f1c40f;"></td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                          <td>2. Architecture &amp; Modélisation</td><td>Rudy</td><td>0%</td><td>16/6/25</td><td>16/6/25</td>
+                          <td style="background:#f1c40f;"></td><td></td><td></td><td></td><td></td><td>2 FS→1</td>
+                        </tr>
+                        <tr>
+                          <td>3. Communication Réseau</td><td>Rudy</td><td>0%</td><td>17/6/25</td><td>17/6/25</td>
+                          <td></td><td style="background:#2471a3;"></td><td></td><td></td><td></td><td>3 FS→2</td>
+                        </tr>
+                        <tr>
+                          <td>4. Interfaces Utilisateurs (UI)</td><td>Rudy</td><td>0%</td><td>18/6/25</td><td>18/6/25</td>
+                          <td></td><td></td><td style="background:#922b21;"></td><td></td><td></td><td>4 FS→2</td>
+                        </tr>
+                        <tr>
+                          <td>5. Authentification</td><td>Rudy</td><td>0%</td><td>18/6/25</td><td>18/6/25</td>
+                          <td></td><td></td><td style="background:#922b21;"></td><td></td><td></td><td>5 FS→3&amp;4</td>
+                        </tr>
+                        <tr>
+                          <td>6. Liste utilisateurs &amp; Messages</td><td>Rudy</td><td>0%</td><td>19/6/25</td><td>19/6/25</td>
+                          <td></td><td></td><td></td><td style="background:#1abc9c;"></td><td></td><td>6 FS→5</td>
+                        </tr>
+                        <tr>
+                          <td>7. Gestion statuts &amp; finalisation</td><td>Rudy</td><td>0%</td><td>20/6/25</td><td>20/6/25</td>
+                          <td></td><td></td><td></td><td></td><td style="background:#7dbb4e;"></td><td>7 FS→6</td>
+                        </tr>
+                        <tr>
+                          <td>8. Livraison finale</td><td>Rudy</td><td>0%</td><td>20/6/25</td><td>20/6/25</td>
+                          <td></td><td></td><td></td><td></td><td style="background:#27ae60;"></td><td>8 FS→6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <p class="mt-2 text-center" style="color: #888; font-size: 0.82rem;">
+                  <i class="fas fa-info-circle me-1"></i>Planning sur 5 jours (16–20/06/2025) avec 8 tâches : Gouvernance, Architecture, Communication réseau, Interfaces UI, Authentification, Liste utilisateurs, Gestion statuts, Livraison
+                </p>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 8. Gestion de Projet -->
+              <div>
+                <h6 class="fw-bold mb-2" style="color: #ffffff;">
+                  <i class="fas fa-list-check me-2"></i>8. Gestion de Projet
+                </h6>
+                <p class="mb-3" style="color: #ccc; font-size: 0.9rem;">
+                  Pour ce projet, nous avons utilisé une approche <strong style="color:#fff;">Agile</strong> combinant Scrum, MoSCoW et Kanban :
+                </p>
+
+                <!-- Méthodologie Scrum -->
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                  <p class="fw-bold mb-2" style="color: #27ae60; font-size: 0.85rem;">
+                    <i class="fas fa-sync-alt me-1"></i>Méthodologie Scrum
+                  </p>
+                  <p class="mb-3" style="color: #ccc; font-size: 0.88rem;">Organisation en <strong style="color:#fff;">sprints de 1 semaine</strong> pour un développement itératif rapide :</p>
+                  <div style="border-top: 1px solid rgba(255,255,255,0.08);">
+                    <div class="d-flex align-items-start py-2" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                      <i class="fas fa-check me-2 mt-1" style="color:#27ae60;"></i>
+                      <span style="color:#ccc; font-size:0.88rem;"><strong style="color:#fff;">Sprint Planning</strong> : Définition des tâches chaque lundi</span>
+                    </div>
+                    <div class="d-flex align-items-start py-2" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                      <i class="fas fa-check me-2 mt-1" style="color:#27ae60;"></i>
+                      <span style="color:#ccc; font-size:0.88rem;"><strong style="color:#fff;">Daily Standup</strong> : Point quotidien de 15 minutes</span>
+                    </div>
+                    <div class="d-flex align-items-start py-2" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                      <i class="fas fa-check me-2 mt-1" style="color:#27ae60;"></i>
+                      <span style="color:#ccc; font-size:0.88rem;"><strong style="color:#fff;">Sprint Review</strong> : Démonstration des fonctionnalités</span>
+                    </div>
+                    <div class="d-flex align-items-start py-2">
+                      <i class="fas fa-check me-2 mt-1" style="color:#27ae60;"></i>
+                      <span style="color:#ccc; font-size:0.88rem;"><strong style="color:#fff;">Sprint Retrospective</strong> : Analyse d'amélioration</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Priorisation MoSCoW -->
+                <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                  <p class="fw-bold mb-3" style="color: #27ae60; font-size: 0.85rem;">
+                    <i class="fas fa-sort-amount-down me-1"></i>Priorisation MoSCoW
+                  </p>
+                  <div class="row g-2">
+                    <!-- Must Have -->
+                    <div class="col-6">
+                      <div class="rounded-3 p-3 h-100" style="background: rgba(39,174,96,0.15); border: 1px solid rgba(39,174,96,0.4);">
+                        <p class="fw-bold mb-2" style="color: #27ae60; font-size: 0.85rem;">
+                          <i class="fas fa-star me-1"></i>Must Have
+                        </p>
+                        <ul class="mb-0 ps-3" style="color:#ccc; font-size:0.82rem;">
+                          <li>Authentification admin</li>
+                          <li>Gestion patrimoine</li>
+                          <li>Création de prêts</li>
+                          <li>Restitution équipements</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- Should Have -->
+                    <div class="col-6">
+                      <div class="rounded-3 p-3 h-100" style="background: rgba(36,113,163,0.2); border: 1px solid rgba(36,113,163,0.5);">
+                        <p class="fw-bold mb-2" style="color: #4da6ff; font-size: 0.85rem;">
+                          <i class="fas fa-thumbs-up me-1"></i>Should Have
+                        </p>
+                        <ul class="mb-0 ps-3" style="color:#ccc; font-size:0.82rem;">
+                          <li>Filtres de recherche</li>
+                          <li>Historique des prêts</li>
+                          <li>Gestion catégories</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tableau Kanban (Notion) -->
+                <div class="rounded-3 p-3 mt-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                  <p class="fw-bold mb-2" style="color: #f0c040; font-size: 0.85rem;">
+                    <i class="fas fa-th-large me-1"></i>Tableau Kanban (Notion)
+                  </p>
+                  <p class="mb-3" style="color: #ccc; font-size: 0.88rem;">Gestion visuelle avec tableau Kanban sur <strong style="color:#fff;">Notion</strong> (voir capture d'écran ci-dessus)</p>
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <div class="rounded-3 p-2 text-center fw-bold" style="border: 1px solid #e74c3c; color: #e74c3c; font-size: 0.82rem; background: rgba(231,76,60,0.08);">
+                        <i class="fas fa-inbox me-1"></i>À Faire
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="rounded-3 p-2 text-center fw-bold" style="border: 1px solid #f0c040; color: #f0c040; font-size: 0.82rem; background: rgba(240,192,64,0.08);">
+                        <i class="fas fa-spinner me-1"></i>En Cours
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="rounded-3 p-2 text-center fw-bold" style="border: 1px solid #27ae60; color: #27ae60; font-size: 0.82rem; background: rgba(39,174,96,0.08);">
+                        <i class="fas fa-check-circle me-1"></i>Terminé
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Diagramme de Gantt résumé -->
+                <div class="rounded-3 p-3 mt-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                  <p class="fw-bold mb-2" style="color: #4da6ff; font-size: 0.85rem;">
+                    <i class="fas fa-chart-bar me-1"></i>Diagramme de Gantt
+                  </p>
+                  <p class="mb-2" style="color: #ccc; font-size: 0.88rem;">Planning sur <strong style="color:#fff;">5 jours</strong> (16–20 juin 2025) avec 8 tâches principales (voir diagramme complet ci-dessus) :</p>
+                  <ol class="mb-0 ps-3" style="color:#ccc; font-size:0.85rem;">
+                    <li>Gouvernance &amp; Initialisation</li>
+                    <li>Architecture &amp; Modélisation (MCD)</li>
+                    <li>Communication Réseau</li>
+                    <li>Interfaces Utilisateurs (UI)</li>
+                    <li>Authentification</li>
+                    <li>Liste utilisateurs &amp; Messages</li>
+                    <li>Gestion statuts &amp; Finalisation</li>
+                    <li>Livraison finale</li>
+                  </ol>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 9. Compétences du Bloc 1 couvertes -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-graduation-cap me-2"></i>9. Compétences du Bloc 1 couvertes
+                </h6>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #ffffff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Gérer le patrimoine informatique</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Création d'un inventaire numérique du matériel audiovisuel avec suivi des états (disponible / emprunté / maintenance) et historique complet des mouvements.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #ffffff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Travailler en mode projet</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Méthodologie Agile/Scrum, sprints hebdomadaires, priorisation MoSCoW, tableau Kanban sur Notion, diagramme de Gantt.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #ffffff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Mettre à disposition un service informatique</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Déploiement de l'application web accessible aux utilisateurs autorisés pour la gestion des prêts de matériel.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #ffffff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Développer la présence en ligne de l'organisation</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Promotion de l'organisation</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #ffffff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Organiser son environnement de développement professionnel</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">GitHub pour la gestion du code source et la collaboration.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer" style="border-top: 1px solid rgba(100,108,255,0.2);">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >Fermer</button>
+            <a
+              href="https://github.com/juklau/MediaStock"
+              target="_blank"
+              class="btn btn-projet"
+            >
+              <i class="fab fa-github me-2"></i>Voir sur GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts JavaScript -->
     <!-- Bootstrap JS -->
