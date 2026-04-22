@@ -467,7 +467,12 @@
               data-aos-delay="500"
             >
               <div class="card projet-card h-100">
-                <div class="card-img-container">
+                <div
+                  class="card-img-container"
+                  data-bs-toggle="modal"
+                  data-bs-target="#horizonRModal"
+                  style="cursor: pointer;"
+                >
                   <img
                     src="img/Capture d'écran 2026-04-16 152029.png"
                     class="card-img-top"
@@ -494,13 +499,14 @@
                     <span class="badge bg-primary me-1">CSS3</span>
                     <span class="badge bg-info me-1">SQL</span>
                   </div>
-                  <a
-                    href="https://github.com/kevinsenasson/HorizonR"
-                    target="_blank"
+                  <button
+                    type="button"
                     class="btn btn-projet"
+                    data-bs-toggle="modal"
+                    data-bs-target="#horizonRModal"
                   >
-                    <i class="fab fa-github me-2"></i>Voir plus
-                  </a>
+                    <i class="fas fa-eye me-2"></i>Voir plus
+                  </button>
                 </div>
               </div>
             </div>
@@ -4498,24 +4504,20 @@
 
                 <div class="d-flex flex-column gap-2">
                   <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
-                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Répondre aux incidents</p>
-                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Collecter, suivre et orienter les demandes via un système centralisé de gestion clients et devis.</p>
-                  </div>
-                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
-                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Développer la présence en ligne</p>
-                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Valorisation de l'image de l'organisation sur les médias numériques.</p>
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Répondre aux incidents et aux demandes d'assistance et d'évolution</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Collecter, suivre et orienter des demandes via un système centralisé de gestion clients et devis.</p>
                   </div>
                   <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
                     <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Travailler en mode projet</p>
-                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Analyse des objectifs et modalités, planification des activités selon une approche séquentielle par phases.</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Planifier les activités selon une approche séquentielle structurée en 6 phases.</p>
                   </div>
                   <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
-                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Mettre à disposition un service informatique</p>
-                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Tests d'intégration et d'acceptation, déploiement local, accompagnement utilisateur via documentation README.</p>
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Mettre à disposition des utilisateurs un service informatique</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Réaliser les tests d'intégration et d'acceptation d'un service · Accompagner les utilisateurs dans la mise en place d'un service.</p>
                   </div>
                   <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
                     <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Organiser son développement professionnel</p>
-                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Mise en place d'un environnement d'apprentissage, construction de l'identité professionnelle et du projet professionnel.</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Mettre en place son environnement d'apprentissage personnel · Gérer son identité professionnelle · Développer son projet professionnel.</p>
                   </div>
                 </div>
               </div>
@@ -4530,6 +4532,372 @@
             >Fermer</button>
             <a
               href="https://github.com/kevinsenasson/CRM-client-lourd"
+              target="_blank"
+              class="btn btn-projet"
+            >
+              <i class="fab fa-github me-2"></i>Voir sur GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal HorizonR -->
+    <div
+      class="modal fade"
+      id="horizonRModal"
+      tabindex="-1"
+      aria-labelledby="horizonRModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="background: #1a1a2e; border: 1px solid rgba(77,166,255,0.3); border-radius: 16px;">
+          <div class="modal-header" style="border-bottom: 1px solid rgba(77,166,255,0.2);">
+            <h5 class="modal-title fw-bold" id="horizonRModalLabel" style="color: #fff;">
+              <i class="fas fa-calendar-alt me-2" style="color: #4da6ff;"></i>HorizonR
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+
+            <!-- Bannière image -->
+            <div style="height: 300px; overflow: hidden;">
+              <img
+                src="img/Capture d'écran 2026-04-16 152029.png"
+                alt="HorizonR aperçu"
+                style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
+              />
+            </div>
+
+            <div class="p-4">
+
+              <!-- Bloc 1. Informations -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-info-circle me-2"></i>1. Informations générales
+                </h6>
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.4rem; font-weight: 700;">30 jours</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">15/03/2026 au 15/04/2026</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.1rem; font-weight: 700;">Solo</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">Personnel / BTS SIO E5</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.1rem; font-weight: 700;">Frontend</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">Catégorie projet</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.1rem; font-weight: 700;">Terminé</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">Statut</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 2. Stack technique -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-layer-group me-2"></i>2. Stack technique
+                </h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">Node.js</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">Express</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">JS Vanilla</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">CSS maison</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">MySQL</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">Docker</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">Nginx</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">JWT</span>
+                  <span class="badge rounded-pill px-3 py-2" style="background: rgba(77,166,255,0.15); color: #4da6ff; font-size: 0.82rem;">Chart.js</span>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 3. Contexte & Problématique -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-building me-2"></i>3. Contexte & Problématique
+                </h6>
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(255,255,255,0.04);">
+                  <p class="fw-bold mb-1" style="color: #4da6ff; font-size: 0.88rem;">Entreprise fictive : NovaTech Solutions</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">PME de 47 employés basée à Nice, spécialisée en conseil IT. La gestion RH (congés, planning, soldes) était entièrement manuelle — papier et tableurs Excel — entraînant des erreurs de calcul, un manque de visibilité pour les managers et une perte de temps considérable.</p>
+                </div>
+                <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04);">
+                  <p class="fw-bold mb-1" style="color: #4da6ff; font-size: 0.88rem;">Problématique</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Aucun outil interne, tout géré en papier/tableur → erreurs récurrentes, impossibilité de centraliser l'information et manque de visibilité temps réel pour les managers et la direction.</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 4. Besoins & Objectifs -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-bullseye me-2"></i>4. Besoins & Objectifs
+                </h6>
+                <ul class="list-unstyled mb-3" style="color: #ccc; font-size: 0.85rem;">
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>CRUD complet des employés</li>
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>Demandes de congés avec calcul automatique des jours ouvrés</li>
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>Suivi des soldes CP + RTT par employé</li>
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>Planning hebdomadaire visuel</li>
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>Dashboard KPI avec graphiques</li>
+                  <li class="mb-1"><i class="fas fa-check me-2" style="color: #4da6ff;"></i>RBAC avec 3 rôles : ADMIN / MANAGER / EMPLOYE</li>
+                </ul>
+                <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04);">
+                  <p class="fw-bold mb-1" style="color: #4da6ff; font-size: 0.88rem;">Contraintes techniques imposées</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Démarrage via <code style="color: #4da6ff;">docker compose up</code> · JWT stateless · JS Vanilla imposé · CSS maison sans framework · MySQL comme SGBD</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 5. Architecture -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-sitemap me-2"></i>5. Architecture
+                </h6>
+                <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04);">
+                  <p class="mb-1" style="color: #ccc; font-size: 0.85rem;"><span style="color: #4da6ff; font-weight: 600;">Pattern :</span> Architecture 3-tiers MVC</p>
+                  <p class="mb-1" style="color: #ccc; font-size: 0.85rem;"><span style="color: #4da6ff; font-weight: 600;">Docker :</span> 3 services conteneurisés + Nginx en reverse proxy sur le réseau <code style="color: #4da6ff;">horizonr_net</code></p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;"><span style="color: #4da6ff; font-weight: 600;">Routing :</span> Toutes les requêtes <code style="color: #4da6ff;">/api/*</code> redirigées vers le backend Node.js</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 6. Fonctionnalités clés -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-star me-2"></i>6. Fonctionnalités clés
+                </h6>
+                <div class="d-flex flex-column gap-2">
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;">Authentification JWT & RBAC</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">3 rôles distincts (ADMIN / MANAGER / EMPLOYE), middleware de vérification, soft-delete des comptes.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;">Workflow congés complet</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Soumission, validation / refus par le manager, calcul automatique des jours ouvrés via <code style="color: #4da6ff;">calculerJoursOuvres()</code>, soldes CP + RTT mis à jour en temps réel.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;">Planning hebdomadaire</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Vue semaine interactive affichant l'ensemble des absences de l'équipe.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;">Dashboard KPI — 4 graphiques Chart.js</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Répartition des congés, évolution mensuelle, statuts des demandes, types de congés — visualisation temps réel pour la direction.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;">Profil employé</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Consultation des informations personnelles + historique des 5 derniers congés.</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 7. Deuxième capture -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-image me-2"></i>7. Aperçu supplémentaire
+                </h6>
+                <div style="border-radius: 10px; overflow: hidden; border: 1px solid rgba(77,166,255,0.2);">
+                  <img
+                    src="img/Capture d'écran 2026-04-16 152042.png"
+                    alt="HorizonR vue secondaire"
+                    style="width: 100%; height: auto; display: block;"
+                  />
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 8. Difficultés & Solutions -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-exclamation-triangle me-2"></i>7. Difficultés rencontrées & Solutions
+                </h6>
+                <div>
+                  <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                    <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 1 : Persistance du JWT côté client</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Token stocké en <code style="color: #ccc;">localStorage</code> côté navigateur, sans mécanisme centralisé pour détecter son expiration et rediriger l'utilisateur.</p>
+                  </div>
+                  <div class="rounded-3 p-3 mb-3" style="background: rgba(20,80,140,0.25); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #4da6ff;">Solution :</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Intercepteur centralisé dans <code style="color: #ccc;">api.js</code> — toute requête passant par <code style="color: #ccc;">Api.request()</code> détecte un code 401 et appelle automatiquement <code style="color: #ccc;">Auth.logout()</code> qui vide le <code style="color: #ccc;">localStorage</code> et redirige vers <code style="color: #ccc;">login.html</code>.</p>
+                  </div>
+
+                  <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                    <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 2 : Ordre de démarrage Docker</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">MySQL nécessite plusieurs secondes pour s'initialiser (création de la BDD, exécution des scripts SQL). Le backend démarrait avant que MySQL soit prêt et crashait à la connexion.</p>
+                  </div>
+                  <div class="rounded-3 p-3 mb-3" style="background: rgba(20,80,140,0.25); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #4da6ff;">Solution :</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;"><code style="color: #ccc;">healthcheck</code> configuré sur le service MySQL (<code style="color: #ccc;">mysqladmin ping</code>) dans le <code style="color: #ccc;">docker-compose.yml</code> + <code style="color: #ccc;">depends_on: condition: service_healthy</code> sur le backend pour garantir que le backend ne démarre qu'une fois MySQL opérationnel.</p>
+                  </div>
+
+                  <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                    <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 3 : Calcul des jours ouvrés et solde négatif</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Un calcul basique de différence de dates incluait les week-ends, et des validations concurrentes pouvaient faire passer le solde de congés en négatif.</p>
+                  </div>
+                  <div class="rounded-3 p-3 mb-3" style="background: rgba(20,80,140,0.25); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #4da6ff;">Solution :</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Fonction <code style="color: #ccc;">calculerJoursOuvres()</code> qui itère jour par jour en excluant les samedis et dimanches. En base, <code style="color: #ccc;">GREATEST(0, solde_conges - ?)</code> garantit que le solde ne descend jamais en dessous de zéro.</p>
+                  </div>
+
+                  <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                    <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 4 : Filtrage des données par rôle</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Un employé ou manager ne devait voir que ses propres données, sans qu'une simple vérification côté frontend suffise (contournable).</p>
+                  </div>
+                  <div class="rounded-3 p-3 mb-0" style="background: rgba(20,80,140,0.25); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #4da6ff;">Solution :</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Filtrage systématique côté backend via des requêtes SQL conditionnelles selon le rôle extrait du token JWT. Pour les managers, vérification de <code style="color: #ccc;">manager_id</code> pour cloisonner strictement les données entre équipes.</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 9. Tests -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-vials me-2"></i>8. Tests
+                </h6>
+                <div class="row g-2 mb-3">
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.3rem; font-weight: 700;">Jest</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">Framework de tests</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rounded-3 p-3 text-center" style="background: rgba(77,166,255,0.08);">
+                      <div style="color: #4da6ff; font-size: 1.3rem; font-weight: 700;">Istanbul</div>
+                      <div style="color: #aaa; font-size: 0.8rem;">Coverage report</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(255,255,255,0.04);">
+                  <p class="fw-bold mb-1" style="color: #4da6ff; font-size: 0.88rem;">Fichiers testés</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;"><code style="color: #4da6ff;">auth.js</code> (middleware JWT) · <code style="color: #4da6ff;">role.js</code> (middleware RBAC) · <code style="color: #4da6ff;">authController.test.js</code> · <code style="color: #4da6ff;">conges.test.js</code></p>
+                </div>
+                <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04);">
+                  <p class="fw-bold mb-1" style="color: #4da6ff; font-size: 0.88rem;">Couverture & Tests manuels</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">~13 % sur <code style="color: #4da6ff;">congesController</code> (limite documentée). Tests manuels via 3 comptes démo (ADMIN / MANAGER / EMPLOYE) + interface phpMyAdmin sur le port :8080.</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 10. Gantt -->
+              <div class="mb-4">
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-project-diagram me-2"></i>9. Planning Gantt
+                </h6>
+                <div class="gantt-container" style="overflow-x: auto;">
+                  <table class="table table-dark table-sm" style="min-width: 520px; font-size: 0.8rem;">
+                    <thead>
+                      <tr style="color: #4da6ff;">
+                        <th>Phase</th>
+                        <th>S1</th><th>S2</th><th>S3</th><th>S4</th><th>S5</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Auth & RBAC</td>
+                        <td colspan="1" style="background: rgba(77,166,255,0.5); border-radius: 4px;"></td>
+                        <td colspan="4"></td>
+                      </tr>
+                      <tr>
+                        <td>CRUD Employés</td>
+                        <td colspan="1"></td>
+                        <td colspan="1" style="background: rgba(77,166,255,0.5); border-radius: 4px;"></td>
+                        <td colspan="3"></td>
+                      </tr>
+                      <tr>
+                        <td>Gestion congés</td>
+                        <td colspan="2"></td>
+                        <td colspan="1" style="background: rgba(77,166,255,0.5); border-radius: 4px;"></td>
+                        <td colspan="2"></td>
+                      </tr>
+                      <tr>
+                        <td>Planning hebdo</td>
+                        <td colspan="3"></td>
+                        <td colspan="1" style="background: rgba(77,166,255,0.5); border-radius: 4px;"></td>
+                        <td colspan="1"></td>
+                      </tr>
+                      <tr>
+                        <td>Dashboard KPI</td>
+                        <td colspan="4"></td>
+                        <td colspan="1" style="background: rgba(77,166,255,0.5); border-radius: 4px;"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="mt-2" style="color: #aaa; font-size: 0.8rem; text-align: right;">
+                  Début : 15/03/2026 &nbsp;|&nbsp; Fin : 15/04/2026
+                </p>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 11. Compétences BTS SIO -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-graduation-cap me-2"></i>10. Compétences BTS SIO couvertes
+                </h6>
+                <div class="d-flex flex-column gap-2">
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Répondre aux incidents</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Gestion et suivi des demandes de congés via un workflow centralisé avec validation hiérarchique.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Développer la présence en ligne</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Application web accessible via navigateur, déployée avec Docker + Nginx, prête pour une mise en production.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Travailler en mode projet</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Développement itératif en 5 phases séquentielles avec Git pour la gestion des versions.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Mettre à disposition un service informatique</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Déploiement conteneurisé via <code style="color: #4da6ff;">docker compose up</code>, 3 comptes démo disponibles, documentation README complète.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #4da6ff;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Organiser son développement professionnel</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Montée en compétences sur Docker, JWT, Node.js et les architectures conteneurisées dans le cadre du BTS SIO.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer" style="border-top: 1px solid rgba(77,166,255,0.2);">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >Fermer</button>
+            <a
+              href="https://github.com/kevinsenasson/HorizonR"
               target="_blank"
               class="btn btn-projet"
             >
