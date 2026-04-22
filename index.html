@@ -84,7 +84,7 @@
 
           <!-- Colonne gauche : texte -->
           <div class="col-lg-7 col-md-12 text-lg-start text-center" data-aos="fade-right">
-            <p class="text-uppercase mb-2" style="color: var(--couleur-accent); font-weight: 600; letter-spacing: 3px;">Bienvenue sur mon portfolio</p>
+            <p class="text-uppercase mb-2 texte-bienvenue" style="color: var(--couleur-accent); font-weight: 600; letter-spacing: 3px;">Bienvenue sur mon portfolio</p>
             <h1 class="fw-bold titre-principal mb-3" style="font-size: clamp(2.5rem, 5vw, 4rem);">
               Kevin Senasson
             </h1>
@@ -130,7 +130,7 @@
           </div>
 
           <!-- Colonne droite : avatar -->
-          <div class="col-lg-5 col-md-8 col-10 mx-auto mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="200">
+          <div class="col-lg-5 col-md-8 col-10 mx-auto mt-5 mt-lg-0 text-center avatar-colonne-accueil" data-aos="fade-left" data-aos-delay="200">
             <div style="position: relative; display: inline-block;">
               <!-- Halos décoratifs -->
               <div style="position: absolute; inset: -16px; border-radius: 50%; border: 3px solid var(--couleur-accent); opacity: 0.5;"></div>
@@ -1085,6 +1085,7 @@
             <div class="mb-4">
               <h4 class="sous-titre-synthese">Note de synthèse</h4>
               <iframe
+                class="iframe-masque-mobile"
                 src="img/NOTE DE SYNTHESE Kevin Senasson - .pdf"
                 width="100%"
                 height="750px"
@@ -1107,6 +1108,7 @@
             <div>
               <h4 class="sous-titre-synthese">Rapport de stage</h4>
               <iframe
+                class="iframe-masque-mobile"
                 src="img/rapport de stage .pdf"
                 width="100%"
                 height="750px"
@@ -1170,6 +1172,7 @@
             <div>
               <h4 class="sous-titre-synthese">Journal de missions (J-1 à J-30)</h4>
               <iframe
+                class="iframe-masque-mobile"
                 src="img/Stage ParkX Missions j-1 à j-30.pdf"
                 width="100%"
                 height="750px"
@@ -1383,7 +1386,13 @@
         <!-- Tableau de synthèse de ma veille -->
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="300">
           <div class="col-12">
-            <div class="carte-veille p-4 rounded-4 shadow-lg">
+            <!-- Bouton téléchargement tableau veille (mobile uniquement) -->
+            <div class="bouton-veille-mobile text-center mb-4">
+              <a href="img/tableau-veille.png" download class="btn bouton-telechargement px-4 py-2">
+                <i class="fas fa-download me-2"></i>Télécharger le tableau de synthèse de veille
+              </a>
+            </div>
+            <div class="carte-veille-contenu carte-veille p-4 rounded-4 shadow-lg">
               <h3 class="text-center mb-4">
                 <i class="fas fa-table me-2"></i>Synthèse de ma veille
                 technologique
@@ -2739,6 +2748,7 @@
         <!-- Tableau de synthèse PDF -->
         <div class="mb-5 text-center" data-aos="fade-up">
           <iframe
+            class="iframe-masque-mobile"
             src="img/8 - BTS SIO - Annexe 8-1 - Tableau de synthèse - Epreuve E5 - BTS SIO 2024.pdf"
             width="100%"
             height="900px"
@@ -2933,6 +2943,7 @@
         </h2>
         <div data-aos="fade-up">
           <iframe
+            class="iframe-masque-mobile"
             src="img/CV_2026-04-02_Kevin_Senasson%20sans%20coordon%C3%A9.pdf"
             width="100%"
             height="900px"

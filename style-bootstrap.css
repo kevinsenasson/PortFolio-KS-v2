@@ -2232,3 +2232,39 @@ h6 {
     transform: translateX(-50%) translateY(0);
   }
 }
+
+/* ============================================================
+   MODIFICATIONS MOBILE UNIQUEMENT (max-width: 991.98px)
+   N'affecte pas la version desktop (≥ 992px)
+   ============================================================ */
+
+/* Bouton veille mobile : caché sur desktop, visible sur mobile */
+.bouton-veille-mobile {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  /* 1. Margin-top sur "Bienvenue sur mon portfolio" */
+  .texte-bienvenue {
+    margin-top: 4.5rem;
+  }
+
+  /* 2. Masquer l'avatar sur mobile */
+  .avatar-colonne-accueil {
+    display: none !important;
+  }
+
+  /* 3. Masquer les iframes PDF sur mobile (Stage 1, Stage 2, Synthèse, CV) */
+  .iframe-masque-mobile {
+    display: none !important;
+  }
+
+  /* 4. Masquer le tableau veille desktop, afficher le bouton mobile */
+  .carte-veille-contenu {
+    display: none !important;
+  }
+
+  .bouton-veille-mobile {
+    display: block !important;
+  }
+}
