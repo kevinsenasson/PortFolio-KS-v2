@@ -613,7 +613,12 @@
               data-aos-delay="300"
             >
               <div class="card projet-card h-100">
-                <div class="card-img-container">
+                <div
+                  class="card-img-container"
+                  data-bs-toggle="modal"
+                  data-bs-target="#crmModal"
+                  style="cursor: pointer"
+                >
                   <img
                     src="img/Capture d'écran CRM commercial 2026-03-18 100426.png"
                     class="card-img-top"
@@ -638,13 +643,13 @@
                     <span class="badge bg-danger me-1">JavaFX</span>
                     <span class="badge bg-secondary">SQLite</span>
                   </div>
-                  <a
-                    href="https://github.com/kevinsenasson/CRM-client-lourd"
-                    target="_blank"
+                  <button
                     class="btn btn-projet"
+                    data-bs-toggle="modal"
+                    data-bs-target="#crmModal"
                   >
-                    <i class="fab fa-github me-2"></i>Voir plus
-                  </a>
+                    <i class="fas fa-eye me-2"></i>Voir plus
+                  </button>
                 </div>
               </div>
             </div>
@@ -4053,6 +4058,478 @@
             >Fermer</button>
             <a
               href="https://github.com/juklau/MediaStock"
+              target="_blank"
+              class="btn btn-projet"
+            >
+              <i class="fab fa-github me-2"></i>Voir sur GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal CRM Commercial -->
+    <div
+      class="modal fade"
+      id="crmModal"
+      tabindex="-1"
+      aria-labelledby="crmModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="background: #1a1a2e; border: 1px solid rgba(39,174,96,0.3); border-radius: 16px;">
+          <div class="modal-header" style="border-bottom: 1px solid rgba(39,174,96,0.2);">
+            <h5 class="modal-title fw-bold" id="crmModalLabel" style="color: #fff;">
+              <i class="fas fa-handshake me-2" style="color: #27ae60;"></i>CRM Commercial
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fermer"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <img
+              src="img/Capture d'écran 2026-04-22 155605.png"
+              class="img-fluid w-100"
+              alt="Aperçu CRM Commercial"
+              style="border-radius: 0; max-height: 300px; object-fit: cover;"
+            />
+            <div class="p-4">
+
+              <!-- Bloc Informations -->
+              <div class="mb-4 p-3 rounded-3" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-info-circle me-2"></i>Informations
+                </h6>
+                <div class="row gy-2" style="font-size: 0.95rem;">
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-calendar-alt me-2" style="color: #27ae60;"></i>Durée
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">40 jours — 14/02/2026 au 25/03/2026</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-users me-2" style="color: #27ae60;"></i>Équipe
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">Solo</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-university me-2" style="color: #27ae60;"></i>Contexte
+                  </div>
+                  <div class="col-6 col-sm-9 fw-semibold" style="color: #fff;">Formation – BTS SIO SLAM</div>
+
+                  <div class="col-6 col-sm-3" style="color: #888;">
+                    <i class="fas fa-check-circle me-2" style="color: #27ae60;"></i>Statut
+                  </div>
+                  <div class="col-6 col-sm-9">
+                    <span class="badge" style="background: #1a7a3a; color: #fff; font-size: 0.85rem; padding: 5px 12px; border-radius: 6px;">Terminé</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bloc Technologies -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #fff;">Technologies</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge" style="background: #b07219; font-size: 0.85rem; padding: 6px 12px;">Java 21</span>
+                  <span class="badge" style="background: #2471a3; font-size: 0.85rem; padding: 6px 12px;">JavaFX 23.0.2</span>
+                  <span class="badge" style="background: #8e44ad; font-size: 0.85rem; padding: 6px 12px;">Maven</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #27ae60; color: #27ae60; font-size: 0.85rem; padding: 6px 12px;">SQLite</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #888; color: #aaa; font-size: 0.85rem; padding: 6px 12px;">JUnit 5</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #888; color: #aaa; font-size: 0.85rem; padding: 6px 12px;">Mockito</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #888; color: #aaa; font-size: 0.85rem; padding: 6px 12px;">TestFX</span>
+                  <span class="badge" style="background: transparent; border: 1px solid #888; color: #aaa; font-size: 0.85rem; padding: 6px 12px;">JaCoCo</span>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 1. Contexte -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-university me-2"></i>1. Contexte
+                </h6>
+
+                <p class="fw-bold mb-1" style="color: #fff;">Situation</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Ce projet a été réalisé dans le cadre de ma <strong style="color: #fff;">formation BTS SIO option SLAM</strong>. Le commercial gérait son activité via des fichiers Excel, des notes personnelles et des emails — une organisation dispersée et risquée.
+                </p>
+
+                <p class="fw-bold mb-1 mt-3" style="color: #fff;">Organisation</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Entreprise fictive <strong style="color: #fff;">TechniBât Solutions</strong>, PME des Hauts-de-France spécialisée dans la vente et l'installation de solutions bâtiment (électricité, sécurité, automatisation), ~10 salariés, créée en 2015.
+                </p>
+
+                <p class="fw-bold mb-1 mt-3" style="color: #fff;">Problématique</p>
+                <p style="color: #ccc; line-height: 1.7; font-size: 0.95rem;">
+                  Dispersion des informations clients et devis, risque de perte de données, difficulté de suivi de l'historique des échanges, manque de visibilité sur l'avancement des devis.
+                </p>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 2. Besoin & Objectifs -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-bullseye me-2"></i>2. Besoin &amp; Objectifs
+                </h6>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Objectifs fonctionnels</p>
+                <ul class="list-unstyled mb-3" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Créer, consulter et modifier les clients (segmentation, statut, source d'acquisition)
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Créer, consulter et modifier les devis liés aux clients
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Associer des commentaires de suivi aux clients et devis
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Gérer les informations du commercial et de l'entreprise
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i>Validation métier cohérente et persistance SQLite (offline uniquement)
+                  </li>
+                </ul>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Contraintes techniques</p>
+                <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Java 21, JavaFX 23.0.2, Maven, SQLite via sqlite-jdbc 3.45.1.0
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Tests JUnit 5 / Mockito / TestFX — couverture JaCoCo
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-exclamation-triangle me-2" style="color: #f0c040;"></i>Réalisation individuelle, application desktop offline uniquement
+                  </li>
+                </ul>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 3. Solution Proposée -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-lightbulb me-2"></i>3. Solution Proposée
+                </h6>
+
+                <p class="fw-bold mb-1" style="color: #fff;">Architecture MVC</p>
+                <p style="color: #ccc; font-size: 0.95rem; margin-bottom: 0.75rem;">Architecture en couches strictement séparées :</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: #ccc; font-size: 0.82rem; padding: 5px 10px;">util</span>
+                  <span style="color: #666; align-self: center;">→</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: #ccc; font-size: 0.82rem; padding: 5px 10px;">dao</span>
+                  <span style="color: #666; align-self: center;">→</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: #ccc; font-size: 0.82rem; padding: 5px 10px;">model</span>
+                  <span style="color: #666; align-self: center;">→</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: #ccc; font-size: 0.82rem; padding: 5px 10px;">service</span>
+                  <span style="color: #666; align-self: center;">→</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); color: #ccc; font-size: 0.82rem; padding: 5px 10px;">validation</span>
+                  <span style="color: #666; align-self: center;">→</span>
+                  <span class="badge" style="background: rgba(39,174,96,0.2); border: 1px solid rgba(39,174,96,0.4); color: #27ae60; font-size: 0.82rem; padding: 5px 10px;">view (FXML)</span>
+                </div>
+
+                <p class="fw-bold mb-3 mt-4" style="color: #fff;">Fonctionnalités CRUD</p>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
+                  <table class="table table-dark mb-0" style="font-size: 0.88rem;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+                        <th style="color: #aaa; background: rgba(255,255,255,0.04);">Entité</th>
+                        <th style="color: #aaa; background: rgba(255,255,255,0.04); text-align:center;">Create</th>
+                        <th style="color: #aaa; background: rgba(255,255,255,0.04); text-align:center;">Read</th>
+                        <th style="color: #aaa; background: rgba(255,255,255,0.04); text-align:center;">Update</th>
+                        <th style="color: #aaa; background: rgba(255,255,255,0.04); text-align:center;">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td style="color:#ccc;">Client</td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓ liste+détail</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td></tr>
+                      <tr><td style="color:#ccc;">Devis</td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓ liste+détail</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td></tr>
+                      <tr><td style="color:#ccc;">Commentaire</td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td></tr>
+                      <tr><td style="color:#ccc;">Commercial</td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td></tr>
+                      <tr><td style="color:#ccc;">Entreprise</td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td><td style="text-align:center;"><span style="color:#27ae60;">✓</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc Aperçu visuel -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-image me-2"></i>Aperçu visuel
+                </h6>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                  <img
+                    src="img/Capture d'écran 2026-04-22 155605.png"
+                    class="img-fluid w-100"
+                    alt="Interface CRM Commercial"
+                    style="display: block;"
+                  />
+                </div>
+                <p class="mt-2 text-center" style="color: #888; font-size: 0.82rem;">
+                  <i class="fas fa-info-circle me-1"></i>Capture d'écran de l'interface principale
+                </p>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc 4. Réalisation -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-code me-2"></i>4. Réalisation
+                </h6>
+
+                <p class="fw-bold mb-2" style="color: #fff;">Ma contribution (projet solo)</p>
+                <ul class="list-unstyled mb-0" style="font-size: 0.95rem;">
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Architecture MVC</strong>&nbsp; + schéma BDD (MCD/MLD/MPD)
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Développement</strong>&nbsp; de toutes les couches (util, dao, model, service, validation)
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Interfaces FXML</strong>&nbsp; et contrôleurs JavaFX
+                  </li>
+                  <li class="py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07); color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Tests</strong>&nbsp; unitaires, UI et intégration
+                  </li>
+                  <li class="py-2" style="color: #ccc;">
+                    <i class="fas fa-check me-2" style="color: #27ae60;"></i><strong style="color: #fff;">Documentation</strong>&nbsp; (README, diagrammes, document RP) + analyse évolution (Devis → Facture)
+                  </li>
+                </ul>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.1); margin: 1.5rem 0;">
+
+              <!-- Bloc Gantt -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #4da6ff;">
+                  <i class="fas fa-tasks me-2"></i>Gestion du projet — Phases séquentielles
+                </h6>
+
+                <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                  <div class="mb-3">
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">1. Cadrage</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 0%; width: 12%; height: 100%; background: #3b82f6; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">2. Socle technique</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 10%; width: 20%; height: 100%; background: #3b82f6; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">3. Fonctionnalités métier</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 28%; width: 35%; height: 100%; background: #27ae60; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">4. Interface UI</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 55%; width: 20%; height: 100%; background: #8e44ad; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">5. Qualité / Tests</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 70%; width: 18%; height: 100%; background: #22c55e; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center" style="font-size: 0.88rem;">
+                      <span style="color: #ccc; min-width: 180px;">6. Livraison</span>
+                      <div style="flex: 1; position: relative; height: 10px; background: rgba(255,255,255,0.06); border-radius: 5px;">
+                        <div style="position: absolute; left: 86%; width: 14%; height: 100%; background: #f0c040; border-radius: 5px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-3" style="font-size: 0.82rem;">
+                    <span style="color: #888;"><i class="fas fa-calendar me-1"></i>Début : 14/02/2026</span>
+                    <span class="fw-bold" style="color: #27ae60;">Approche séquentielle</span>
+                    <span style="color: #888;"><i class="fas fa-flag me-1"></i>Fin : 25/03/2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 5. Tests & Validation -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-pencil-alt me-2"></i>5. Tests &amp; Validation
+                </h6>
+                <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
+                  <table class="table table-dark mb-0" style="font-size: 0.9rem;">
+                    <thead>
+                      <tr style="border-bottom: 1px solid rgba(255,255,255,0.15);">
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04);">TYPE</th>
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04);">DÉTAIL</th>
+                        <th style="color: #aaa; font-weight: 600; background: rgba(255,255,255,0.04); text-align:center;">RÉSULTAT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td style="color:#ccc;">Tests unitaires</td><td style="color:#ccc;">~100 tests (DAO, services, validations, utilitaires) — JUnit 5 + Mockito</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Tests UI</td><td style="color:#ccc;">~10 tests contrôleurs JavaFX — TestFX</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Test d'intégration</td><td style="color:#ccc;">1 test — initialisation base SQLite</td><td style="text-align:center;"><span style="background:#1a7a3a;color:#fff;padding:4px 10px;border-radius:6px;"><i class="fas fa-check"></i></span></td></tr>
+                      <tr><td style="color:#ccc;">Couverture JaCoCo</td><td style="color:#ccc;">76% globale — DAO/service mieux couverts que contrôleurs</td><td style="text-align:center;"><span style="background:#2471a3;color:#fff;padding:4px 10px;border-radius:6px;">76%</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 6. Difficultés & Solutions -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-exclamation-circle me-2"></i>6. Difficultés &amp; Solutions
+                </h6>
+
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 1 : JavaFX peu maîtrisé</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Technologie découverte en cours de projet, sans expérience préalable.</p>
+                </div>
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Apprentissage en cours de développement, architecture MVC pour isoler la vue et réduire les dépendances.</p>
+                </div>
+
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 2 : Cohabitation règles UI / règles métier</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Risque de duplication de la logique de validation entre la vue et les services.</p>
+                </div>
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Validation centralisée via les packages <code style="color:#ccc;">validation/rule</code> et <code style="color:#ccc;">validation/validator</code>, sans duplication.</p>
+                </div>
+
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 3 : Temps de lancement Java 21 / JavaFX</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Démarrage de l'application relativement lent comparé à une app web.</p>
+                </div>
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Limitation connue acceptée pour un usage local — ne justifie pas une refonte technologique.</p>
+                </div>
+
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 4 : SQLite moins typé</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Le moteur SQLite n'impose pas de contraintes de types strictes.</p>
+                </div>
+                <div class="rounded-3 p-3 mb-3" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Validations strictes côté service avant toute écriture en base.</p>
+                </div>
+
+                <div class="rounded-3 p-3 mb-2" style="background: rgba(180,30,30,0.15); border-left: 3px solid #e74c3c;">
+                  <p class="fw-bold mb-1" style="color: #e74c3c;">Problème 5 : Tests UI avec TestFX</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Couverture partielle des contrôleurs JavaFX par les tests automatisés.</p>
+                </div>
+                <div class="rounded-3 p-3 mb-0" style="background: rgba(26,122,58,0.2); border-left: 3px solid #27ae60;">
+                  <p class="fw-bold mb-1" style="color: #27ae60;">Solution :</p>
+                  <p class="mb-0" style="color: #ccc; font-size: 0.9rem;">Priorité donnée aux couches service/DAO pour la couverture de tests — 76% JaCoCo atteints.</p>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 7. Captures d'écran -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #ffffff;">
+                  <i class="fas fa-image me-2"></i>7. Captures d'écran
+                </h6>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <p class="mb-2 fw-semibold" style="color: #ccc; font-size: 0.9rem;">
+                      <i class="fas fa-users me-1" style="color:#27ae60;"></i>Gestion des clients
+                    </p>
+                    <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                      <img
+                        src="img/Capture d'écran 2026-04-22 155605.png"
+                        class="img-fluid w-100"
+                        alt="Liste des clients CRM"
+                        style="display: block;"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="mb-2 fw-semibold" style="color: #ccc; font-size: 0.9rem;">
+                      <i class="fas fa-file-invoice me-1" style="color:#27ae60;"></i>Gestion des devis
+                    </p>
+                    <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                      <img
+                        src="img/Capture d'écran 2026-04-22 155616.png"
+                        class="img-fluid w-100"
+                        alt="Gestion des devis CRM"
+                        style="display: block;"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <p class="mb-2 fw-semibold" style="color: #ccc; font-size: 0.9rem;">
+                      <i class="fas fa-comment-dots me-1" style="color:#27ae60;"></i>Commentaires &amp; suivi
+                    </p>
+                    <div class="rounded-3 overflow-hidden" style="border: 1px solid rgba(255,255,255,0.1);">
+                      <img
+                        src="img/Capture d'écran 2026-04-22 155635.png"
+                        class="img-fluid w-100"
+                        alt="Commentaires CRM"
+                        style="display: block;"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr style="border-color: rgba(255,255,255,0.08);">
+
+              <!-- Bloc 9. Compétences BTS SIO -->
+              <div>
+                <h6 class="fw-bold mb-3" style="color: #fcfcfc;">
+                  <i class="fas fa-graduation-cap me-2"></i>8. Compétences BTS SIO couvertes
+                </h6>
+
+                <div class="d-flex flex-column gap-2">
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Répondre aux incidents</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Collecter, suivre et orienter les demandes via un système centralisé de gestion clients et devis.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Développer la présence en ligne</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Valorisation de l'image de l'organisation sur les médias numériques.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Travailler en mode projet</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Analyse des objectifs et modalités, planification des activités selon une approche séquentielle par phases.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Mettre à disposition un service informatique</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Tests d'intégration et d'acceptation, déploiement local, accompagnement utilisateur via documentation README.</p>
+                  </div>
+                  <div class="rounded-3 p-3" style="background: rgba(255,255,255,0.04); border-left: 3px solid #27ae60;">
+                    <p class="fw-bold mb-1" style="color: #ffffff; font-size: 0.88rem;"> — Organiser son développement professionnel</p>
+                    <p class="mb-0" style="color: #ccc; font-size: 0.85rem;">Mise en place d'un environnement d'apprentissage, construction de l'identité professionnelle et du projet professionnel.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer" style="border-top: 1px solid rgba(39,174,96,0.2);">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >Fermer</button>
+            <a
+              href="https://github.com/kevinsenasson/CRM-client-lourd"
               target="_blank"
               class="btn btn-projet"
             >
