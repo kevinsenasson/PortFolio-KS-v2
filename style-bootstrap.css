@@ -1283,8 +1283,19 @@ h6 {
    =================================== */
 
 .section-contact {
-  background: var(--arriere-plan-clair);
+  background: #ffffff;
   color: var(--texte-sombre);
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+}
+
+.section-contact .container {
+  background: #ffffff !important;
+  border: 1px solid #e8eef5;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 3rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+  margin-bottom: 1.5rem;
 }
 
 /* Conteneur de contact */
@@ -1480,24 +1491,44 @@ h6 {
    =================================== */
 
 .pied-de-page {
-  background: var(--arriere-plan-sombre) !important;
-  color: var(--couleur-secondaire);
-  border-top: 3px solid var(--couleur-accent);
+  background: #f8fafc !important;
+  color: #21374d;
+  border-top: 1px solid #e4ebf2;
+  box-shadow: 0 -10px 25px rgba(15, 23, 42, 0.04);
+  padding-top: 2.2rem;
+  padding-bottom: 2rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  margin-top: 2rem;
+}
+
+.pied-de-page .row {
+  align-items: flex-start;
+}
+
+.pied-de-page .col-lg-4 {
+  padding: 0 1rem;
 }
 
 .pied-de-page h5 {
-  color: var(--couleur-accent);
+  color: #1f4d7a;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .pied-de-page a {
-  color: var(--couleur-secondaire);
+  color: #36556f;
   transition: var(--transition-rapide);
 }
 
 .pied-de-page a:hover {
   color: var(--couleur-accent);
-  transform: translateX(5px);
+  transform: translateY(-1px);
+}
+
+.pied-de-page .list-unstyled li {
+  margin-bottom: 0.55rem;
 }
 
 /* Liens réseaux footer */
